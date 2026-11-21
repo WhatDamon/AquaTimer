@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019B665B99A0BF3CACA175D4 /* AquaTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F2E60DE0DE5E11B462E59 /* AquaTypography.swift */; };
+		0588614706F959905691BB13 /* LCDStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A34857DC34044C25C46A1 /* LCDStatusView.swift */; };
+		06BBD73A1DC3CE2D346C732B /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82720F8EAA90652E5891F4D0 /* Countdown.swift */; };
+		071015C258B07517499C115C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = AD837A344C450A8AD5D01F7E /* AppIcon.icon */; };
+		0B7D4500250B9E8319841170 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82720F8EAA90652E5891F4D0 /* Countdown.swift */; };
+		0CB32963A3A9552BC36B2C8B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DC2FD54FF59D88B74545C /* TimerViewController.swift */; };
+		0DDD88E757EA58BE9C0FC99E /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFC4F384FCA53BC4EE3355 /* Fonts */; };
+		0F18A411A14EFC03B19DC65A /* PopupMenus.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715018E787FBE59C6A29D385 /* PopupMenus.xcassets */; };
+		119AFC87168BDA2E11209497 /* WindowTitlebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4A0128910A1EB81A2098D /* WindowTitlebarView.swift */; };
+		149C83D0C64FA0964C033306 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A66C350EBCC81BD759581 /* NotificationService.swift */; };
+		14DE5190DF76667DE985A85D /* ReminderSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD562BDE92B63E11E9F02CE /* ReminderSettingsViewController.swift */; };
+		17189AC55CB1BC0DF5E7F941 /* MinuteDial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A1F9A3B757965329B5012 /* MinuteDial.xcassets */; };
+		1AD907DC46078BE233FCA8B7 /* WindowButtons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5CEB21F3C2979E5F51CE60 /* WindowButtons.xcassets */; };
+		1B17F810EB16337965090CFF /* AquaPopUpMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E820686A0A8840F6719F86 /* AquaPopUpMenuView.swift */; };
+		1F1028E8143CE5EE2ABED208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48E877A863A986D9FDA266 /* AppDelegate.swift */; };
+		1F3EAD68FA0352A5E704C8CC /* QuitConfirmationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED92A659FFDECDE3751AEB5 /* QuitConfirmationPanel.swift */; };
+		1F600E0CB39593E6717B6072 /* LCD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EF0DF7B66482938E095AA /* LCD.xcassets */; };
+		235760A1B4AAF02871821067 /* InputFields.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5090DF582C479752C737760B /* InputFields.xcassets */; };
+		23DDDB0A2401243D3A59A653 /* AquaGlassMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDCD577439BE86D1A7E644 /* AquaGlassMaterial.swift */; };
+		26AAA6D4D626E230F3C8B2EB /* TimerDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51860412D57A90289D13C27 /* TimerDisplayView.swift */; };
+		28E6A7DF3CA65E2B62DA32C8 /* LCDProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0BBCED1E1EBF116B718314 /* LCDProgressIndicator.swift */; };
+		3106BC492EAF448EE9A37A0E /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B5F2DF2867C2D5DF4BFAD /* SettingsWindowController.swift */; };
+		32245ED8BCADC9440AF857C3 /* BrushedMetalBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F3BD586FAE1C9467FF8D9 /* BrushedMetalBackgroundView.swift */; };
+		3C3AAA81D809B564931C9654 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139662BD24F2CF1BFD304F4 /* TimerView.swift */; };
+		4581A95C550537CABFA97793 /* AquaWindowButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD05A17EB83C69B47BD07D /* AquaWindowButtonGroup.swift */; };
+		45FDDDC0499EB397AC881ABF /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF944AFAA6EF4688C11C395A /* GeneralSettingsViewController.swift */; };
+		489083B688FD008D40E9A48F /* AquaHelpTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3865899340EF46521E4AB29 /* AquaHelpTag.swift */; };
+		54362416BB0047D035E93E1C /* AquaWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4405F7A0B64C7F1C070982 /* AquaWindow.swift */; };
+		59BD8359763C2FA6AD889BD4 /* AquaPopUpMenuPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBBBF1C55110C1612B54FE7 /* AquaPopUpMenuPresentation.swift */; };
+		5B50088AFEE38913A459D647 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8273E84E782841BCFBC7C7D /* AboutWindowController.swift */; };
+		6E66377E65134711FB68EC51 /* ActionButtons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0121C1D3B44CBB07E123641E /* ActionButtons.xcassets */; };
+		7FD022C8758A4698DE5742B3 /* AquaPushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860BFE9F62CF38B99E91653D /* AquaPushButton.swift */; };
+		8191453E09345F4937BD8C3F /* AquaVolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60932944C2ECE0B57F970B9F /* AquaVolumeSlider.swift */; };
+		8F82EB8E119BBB6816B8710E /* Metal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43850843A8FD360B07424CCD /* Metal.xcassets */; };
+		9B57A32A0F931B2170800A58 /* SettingsToolbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052826E79EAB98F20C9FAE4C /* SettingsToolbar.xcassets */; };
+		9E051FCFD73A5E3861A5CEFA /* LCDMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56307BC8BA672A38977E2B31 /* LCDMaterial.swift */; };
+		A0437E6F60F6B5F910794C34 /* SettingsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F44CCE44C372233E3A4FBAA /* SettingsLayout.swift */; };
+		A8416A76D5B0B5FBDD07EE4B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A69D170204102E1CF69B22C /* MainWindowController.swift */; };
+		A9D4AF37321B684036158D13 /* Sliders.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DE85F1B2446F54B9E451A9 /* Sliders.xcassets */; };
+		AB2E837063F31330CF2B0316 /* SelectionControls.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15CE42A060C2C58AA64AF73 /* SelectionControls.xcassets */; };
+		AFB4A74FF0BB07B39A4FB66E /* LCDTimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735D1EB450C836452038923 /* LCDTimeField.swift */; };
+		B38E6DC9AF0AE4389F241C29 /* CompletionSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8312E7E3B5AE8F6132277 /* CompletionSoundPlayer.swift */; };
+		BB8879810B6D335D8B5BAA37 /* LCDGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B96F95A7820C7206B4DFD /* LCDGlassView.swift */; };
+		BFB4DE7FB4571928C138173C /* AquaDurationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C3367E71A7D3DBFC82F6AD /* AquaDurationField.swift */; };
+		DAA86ED3B0DB82BBD4CEF452 /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FD79A33C7C2E9C6D1B58F /* CountdownTests.swift */; };
+		DD32C32EAB34B16F5C69BE64 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E2075C2C8DDC35D036F5E /* AppSettings.swift */; };
+		DF59CE6F73705FEFEB8547D2 /* SettingsToolbarToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D1CC96D6A33E339FD2617 /* SettingsToolbarToggle.swift */; };
+		DFF6337E8D9F75A973D63BB3 /* AquaActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57CACAEF222B3B00F69FA82 /* AquaActionButton.swift */; };
+		E7419FAC1553EC81F6913D3D /* CountdownDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B913444080724842FBFCA49 /* CountdownDuration.swift */; };
+		E87E9CE7CD6894538295FF3E /* CountdownDurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887101346B943CE06DA19AA /* CountdownDurationTests.swift */; };
+		EAB6AB41D0426F7F40E7E56B /* AquaSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6136B3D6A19BA043C55B2EE /* AquaSelectionButton.swift */; };
+		EAC6C7536288A6CDA0279870 /* CountdownDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B913444080724842FBFCA49 /* CountdownDuration.swift */; };
+		ED8811EBC928C538230FB4AA /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81885B84767BB0EA175E5D86 /* ApplicationMenu.swift */; };
+		EFE35B6A08F2D70A911C1942 /* TigerWindowShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22E7D61E36988A34676A4E /* TigerWindowShadow.swift */; };
+		F20F67400485AFAD0115384F /* DurationInputHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4012571882B77FC0F36B3 /* DurationInputHistory.swift */; };
+		F47FBCE0A736F6290671CD1A /* AquaFocusRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD750A5DF58E95558E29D46 /* AquaFocusRing.swift */; };
+		F86D9979982D228B31067FBB /* AquaWindowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D244C642064BBF45C144B64 /* AquaWindowButton.swift */; };
+		F8D14F5355EFBA7822A7BA8E /* TigerAquaBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06F2FA6D971A2E8C5AB0BA /* TigerAquaBackgroundView.swift */; };
+		FB33D7D68FCF9C4EC3B20BB0 /* WindowContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FBE9E026195B44AC50BA75 /* WindowContentViewController.swift */; };
+		FC2DFDA65A801B5B39FA3CBC /* MinuteDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68ACCFC5FEDE570CEAEC52B /* MinuteDial.swift */; };
+		FEED42A5BCF3D21B4865BA8B /* AquaPopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF2599BE986FE0117C6EB98 /* AquaPopUpButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0121C1D3B44CBB07E123641E /* ActionButtons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ActionButtons.xcassets; sourceTree = "<group>"; };
+		052826E79EAB98F20C9FAE4C /* SettingsToolbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SettingsToolbar.xcassets; sourceTree = "<group>"; };
+		093DC2FD54FF59D88B74545C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		097F2E60DE0DE5E11B462E59 /* AquaTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaTypography.swift; sourceTree = "<group>"; };
+		0C8EF0DF7B66482938E095AA /* LCD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LCD.xcassets; sourceTree = "<group>"; };
+		0E8A1F9A3B757965329B5012 /* MinuteDial.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MinuteDial.xcassets; sourceTree = "<group>"; };
+		0ED8312E7E3B5AE8F6132277 /* CompletionSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionSoundPlayer.swift; sourceTree = "<group>"; };
+		16C3367E71A7D3DBFC82F6AD /* AquaDurationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaDurationField.swift; sourceTree = "<group>"; };
+		17E820686A0A8840F6719F86 /* AquaPopUpMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaPopUpMenuView.swift; sourceTree = "<group>"; };
+		1D4405F7A0B64C7F1C070982 /* AquaWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaWindow.swift; sourceTree = "<group>"; };
+		1DF2599BE986FE0117C6EB98 /* AquaPopUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaPopUpButton.swift; sourceTree = "<group>"; };
+		24DE85F1B2446F54B9E451A9 /* Sliders.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sliders.xcassets; sourceTree = "<group>"; };
+		2C1D1CC96D6A33E339FD2617 /* SettingsToolbarToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsToolbarToggle.swift; sourceTree = "<group>"; };
+		3139662BD24F2CF1BFD304F4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		3D244C642064BBF45C144B64 /* AquaWindowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaWindowButton.swift; sourceTree = "<group>"; };
+		43850843A8FD360B07424CCD /* Metal.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Metal.xcassets; sourceTree = "<group>"; };
+		4D06F2FA6D971A2E8C5AB0BA /* TigerAquaBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TigerAquaBackgroundView.swift; sourceTree = "<group>"; };
+		4F6A66C350EBCC81BD759581 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		506F3BD586FAE1C9467FF8D9 /* BrushedMetalBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushedMetalBackgroundView.swift; sourceTree = "<group>"; };
+		5090DF582C479752C737760B /* InputFields.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InputFields.xcassets; sourceTree = "<group>"; };
+		56307BC8BA672A38977E2B31 /* LCDMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDMaterial.swift; sourceTree = "<group>"; };
+		5887101346B943CE06DA19AA /* CountdownDurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDurationTests.swift; sourceTree = "<group>"; };
+		58FBE9E026195B44AC50BA75 /* WindowContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowContentViewController.swift; sourceTree = "<group>"; };
+		5EEFC4F384FCA53BC4EE3355 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = AquaTimer/Resources/Fonts; sourceTree = SOURCE_ROOT; };
+		60932944C2ECE0B57F970B9F /* AquaVolumeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaVolumeSlider.swift; sourceTree = "<group>"; };
+		6A69D170204102E1CF69B22C /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		6F44CCE44C372233E3A4FBAA /* SettingsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLayout.swift; sourceTree = "<group>"; };
+		6FBD05A17EB83C69B47BD07D /* AquaWindowButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaWindowButtonGroup.swift; sourceTree = "<group>"; };
+		715018E787FBE59C6A29D385 /* PopupMenus.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PopupMenus.xcassets; sourceTree = "<group>"; };
+		726B5F2DF2867C2D5DF4BFAD /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		73EDCD577439BE86D1A7E644 /* AquaGlassMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaGlassMaterial.swift; sourceTree = "<group>"; };
+		7B913444080724842FBFCA49 /* CountdownDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDuration.swift; sourceTree = "<group>"; };
+		81885B84767BB0EA175E5D86 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
+		82720F8EAA90652E5891F4D0 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		860BFE9F62CF38B99E91653D /* AquaPushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaPushButton.swift; sourceTree = "<group>"; };
+		8FD750A5DF58E95558E29D46 /* AquaFocusRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaFocusRing.swift; sourceTree = "<group>"; };
+		A15CE42A060C2C58AA64AF73 /* SelectionControls.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SelectionControls.xcassets; sourceTree = "<group>"; };
+		A8273E84E782841BCFBC7C7D /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		AA4B96F95A7820C7206B4DFD /* LCDGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDGlassView.swift; sourceTree = "<group>"; };
+		AD837A344C450A8AD5D01F7E /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		B3865899340EF46521E4AB29 /* AquaHelpTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaHelpTag.swift; sourceTree = "<group>"; };
+		B51860412D57A90289D13C27 /* TimerDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDisplayView.swift; sourceTree = "<group>"; };
+		B6136B3D6A19BA043C55B2EE /* AquaSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSelectionButton.swift; sourceTree = "<group>"; };
+		B68ACCFC5FEDE570CEAEC52B /* MinuteDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteDial.swift; sourceTree = "<group>"; };
+		B735D1EB450C836452038923 /* LCDTimeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDTimeField.swift; sourceTree = "<group>"; };
+		BCB8FF2D153B52D4AE547CEC /* AquaTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquaTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA4A0128910A1EB81A2098D /* WindowTitlebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTitlebarView.swift; sourceTree = "<group>"; };
+		BF48E877A863A986D9FDA266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFF3F6075C9211A795DE893C /* AquaTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6FD79A33C7C2E9C6D1B58F /* CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTests.swift; sourceTree = "<group>"; };
+		CCD562BDE92B63E11E9F02CE /* ReminderSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderSettingsViewController.swift; sourceTree = "<group>"; };
+		CF0A34857DC34044C25C46A1 /* LCDStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDStatusView.swift; sourceTree = "<group>"; };
+		D57CACAEF222B3B00F69FA82 /* AquaActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaActionButton.swift; sourceTree = "<group>"; };
+		DB22E7D61E36988A34676A4E /* TigerWindowShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TigerWindowShadow.swift; sourceTree = "<group>"; };
+		DED4012571882B77FC0F36B3 /* DurationInputHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationInputHistory.swift; sourceTree = "<group>"; };
+		E75E2075C2C8DDC35D036F5E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		ECBBBF1C55110C1612B54FE7 /* AquaPopUpMenuPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaPopUpMenuPresentation.swift; sourceTree = "<group>"; };
+		EE0BBCED1E1EBF116B718314 /* LCDProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDProgressIndicator.swift; sourceTree = "<group>"; };
+		EE5CEB21F3C2979E5F51CE60 /* WindowButtons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WindowButtons.xcassets; sourceTree = "<group>"; };
+		EED92A659FFDECDE3751AEB5 /* QuitConfirmationPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitConfirmationPanel.swift; sourceTree = "<group>"; };
+		FF944AFAA6EF4688C11C395A /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		03638B4162CDC7286454B674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FF2D153B52D4AE547CEC /* AquaTimer.app */,
+				BFF3F6075C9211A795DE893C /* AquaTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F2933E3314D7EF3153CCBFE /* AquaTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6255374E642899D6D347700F /* App */,
+				ED4731235E95B21A234E578E /* Aqua */,
+				4E3627FAC10751AA1FE435D1 /* Resources */,
+				4EB102CCD30ADF437C962481 /* Settings */,
+				71F2BC3A9F83CF35019F4F53 /* Support */,
+				7816B43F2312584312CDD194 /* Timer */,
+				B46354D25D3D51994F918E89 /* Views */,
+				B98D04FB20A609C82B1ECD2A /* Window */,
+			);
+			path = AquaTimer;
+			sourceTree = "<group>";
+		};
+		4C1BFE0848EB44A7E2D54109 /* AquaTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5887101346B943CE06DA19AA /* CountdownDurationTests.swift */,
+				CC6FD79A33C7C2E9C6D1B58F /* CountdownTests.swift */,
+			);
+			path = AquaTimerTests;
+			sourceTree = "<group>";
+		};
+		4E3627FAC10751AA1FE435D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0121C1D3B44CBB07E123641E /* ActionButtons.xcassets */,
+				AD837A344C450A8AD5D01F7E /* AppIcon.icon */,
+				5EEFC4F384FCA53BC4EE3355 /* Fonts */,
+				5090DF582C479752C737760B /* InputFields.xcassets */,
+				0C8EF0DF7B66482938E095AA /* LCD.xcassets */,
+				43850843A8FD360B07424CCD /* Metal.xcassets */,
+				0E8A1F9A3B757965329B5012 /* MinuteDial.xcassets */,
+				715018E787FBE59C6A29D385 /* PopupMenus.xcassets */,
+				A15CE42A060C2C58AA64AF73 /* SelectionControls.xcassets */,
+				052826E79EAB98F20C9FAE4C /* SettingsToolbar.xcassets */,
+				24DE85F1B2446F54B9E451A9 /* Sliders.xcassets */,
+				EE5CEB21F3C2979E5F51CE60 /* WindowButtons.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4EB102CCD30ADF437C962481 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E75E2075C2C8DDC35D036F5E /* AppSettings.swift */,
+				0ED8312E7E3B5AE8F6132277 /* CompletionSoundPlayer.swift */,
+				FF944AFAA6EF4688C11C395A /* GeneralSettingsViewController.swift */,
+				4F6A66C350EBCC81BD759581 /* NotificationService.swift */,
+				CCD562BDE92B63E11E9F02CE /* ReminderSettingsViewController.swift */,
+				6F44CCE44C372233E3A4FBAA /* SettingsLayout.swift */,
+				2C1D1CC96D6A33E339FD2617 /* SettingsToolbarToggle.swift */,
+				726B5F2DF2867C2D5DF4BFAD /* SettingsWindowController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6255374E642899D6D347700F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF48E877A863A986D9FDA266 /* AppDelegate.swift */,
+				81885B84767BB0EA175E5D86 /* ApplicationMenu.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		71F2BC3A9F83CF35019F4F53 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				097F2E60DE0DE5E11B462E59 /* AquaTypography.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7816B43F2312584312CDD194 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				82720F8EAA90652E5891F4D0 /* Countdown.swift */,
+				7B913444080724842FBFCA49 /* CountdownDuration.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		B46354D25D3D51994F918E89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B68ACCFC5FEDE570CEAEC52B /* MinuteDial.swift */,
+				B51860412D57A90289D13C27 /* TimerDisplayView.swift */,
+				3139662BD24F2CF1BFD304F4 /* TimerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B98D04FB20A609C82B1ECD2A /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				A8273E84E782841BCFBC7C7D /* AboutWindowController.swift */,
+				1D4405F7A0B64C7F1C070982 /* AquaWindow.swift */,
+				DED4012571882B77FC0F36B3 /* DurationInputHistory.swift */,
+				6A69D170204102E1CF69B22C /* MainWindowController.swift */,
+				EED92A659FFDECDE3751AEB5 /* QuitConfirmationPanel.swift */,
+				DB22E7D61E36988A34676A4E /* TigerWindowShadow.swift */,
+				093DC2FD54FF59D88B74545C /* TimerViewController.swift */,
+				58FBE9E026195B44AC50BA75 /* WindowContentViewController.swift */,
+				BEA4A0128910A1EB81A2098D /* WindowTitlebarView.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		D191833D28C244499D1A2A6C = {
+			isa = PBXGroup;
+			children = (
+				1F2933E3314D7EF3153CCBFE /* AquaTimer */,
+				4C1BFE0848EB44A7E2D54109 /* AquaTimerTests */,
+				03638B4162CDC7286454B674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4731235E95B21A234E578E /* Aqua */ = {
+			isa = PBXGroup;
+			children = (
+				D57CACAEF222B3B00F69FA82 /* AquaActionButton.swift */,
+				16C3367E71A7D3DBFC82F6AD /* AquaDurationField.swift */,
+				8FD750A5DF58E95558E29D46 /* AquaFocusRing.swift */,
+				73EDCD577439BE86D1A7E644 /* AquaGlassMaterial.swift */,
+				B3865899340EF46521E4AB29 /* AquaHelpTag.swift */,
+				1DF2599BE986FE0117C6EB98 /* AquaPopUpButton.swift */,
+				ECBBBF1C55110C1612B54FE7 /* AquaPopUpMenuPresentation.swift */,
+				17E820686A0A8840F6719F86 /* AquaPopUpMenuView.swift */,
+				860BFE9F62CF38B99E91653D /* AquaPushButton.swift */,
+				B6136B3D6A19BA043C55B2EE /* AquaSelectionButton.swift */,
+				60932944C2ECE0B57F970B9F /* AquaVolumeSlider.swift */,
+				3D244C642064BBF45C144B64 /* AquaWindowButton.swift */,
+				6FBD05A17EB83C69B47BD07D /* AquaWindowButtonGroup.swift */,
+				506F3BD586FAE1C9467FF8D9 /* BrushedMetalBackgroundView.swift */,
+				AA4B96F95A7820C7206B4DFD /* LCDGlassView.swift */,
+				56307BC8BA672A38977E2B31 /* LCDMaterial.swift */,
+				EE0BBCED1E1EBF116B718314 /* LCDProgressIndicator.swift */,
+				CF0A34857DC34044C25C46A1 /* LCDStatusView.swift */,
+				B735D1EB450C836452038923 /* LCDTimeField.swift */,
+				4D06F2FA6D971A2E8C5AB0BA /* TigerAquaBackgroundView.swift */,
+			);
+			path = Aqua;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A16CC8E062C3CAD0E4E4CFA /* AquaTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B247E4A4B14F277723CA8A6 /* Build configuration list for PBXNativeTarget "AquaTimerTests" */;
+			buildPhases = (
+				935799C56B0868B47A34A2F2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaTimerTests;
+			packageProductDependencies = (
+			);
+			productName = AquaTimerTests;
+			productReference = BFF3F6075C9211A795DE893C /* AquaTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A609FA3CF539B3E02C45924 /* AquaTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0924136D26EB17D171F7781F /* Build configuration list for PBXNativeTarget "AquaTimer" */;
+			buildPhases = (
+				559B14943C74FFF2CABA9C10 /* Sources */,
+				BC86EEBD8433083CB0641F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaTimer;
+			packageProductDependencies = (
+			);
+			productName = AquaTimer;
+			productReference = BCB8FF2D153B52D4AE547CEC /* AquaTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EED2A765AECA14AA42C853C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					6A16CC8E062C3CAD0E4E4CFA = {
+						ProvisioningStyle = Manual;
+					};
+					6A609FA3CF539B3E02C45924 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5B27096010521A9768F85A39 /* Build configuration list for PBXProject "AquaTimer" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D191833D28C244499D1A2A6C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 03638B4162CDC7286454B674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A609FA3CF539B3E02C45924 /* AquaTimer */,
+				6A16CC8E062C3CAD0E4E4CFA /* AquaTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC86EEBD8433083CB0641F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E66377E65134711FB68EC51 /* ActionButtons.xcassets in Resources */,
+				071015C258B07517499C115C /* AppIcon.icon in Resources */,
+				0DDD88E757EA58BE9C0FC99E /* Fonts in Resources */,
+				235760A1B4AAF02871821067 /* InputFields.xcassets in Resources */,
+				1F600E0CB39593E6717B6072 /* LCD.xcassets in Resources */,
+				8F82EB8E119BBB6816B8710E /* Metal.xcassets in Resources */,
+				17189AC55CB1BC0DF5E7F941 /* MinuteDial.xcassets in Resources */,
+				0F18A411A14EFC03B19DC65A /* PopupMenus.xcassets in Resources */,
+				AB2E837063F31330CF2B0316 /* SelectionControls.xcassets in Resources */,
+				9B57A32A0F931B2170800A58 /* SettingsToolbar.xcassets in Resources */,
+				A9D4AF37321B684036158D13 /* Sliders.xcassets in Resources */,
+				1AD907DC46078BE233FCA8B7 /* WindowButtons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559B14943C74FFF2CABA9C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B50088AFEE38913A459D647 /* AboutWindowController.swift in Sources */,
+				1F1028E8143CE5EE2ABED208 /* AppDelegate.swift in Sources */,
+				DD32C32EAB34B16F5C69BE64 /* AppSettings.swift in Sources */,
+				ED8811EBC928C538230FB4AA /* ApplicationMenu.swift in Sources */,
+				DFF6337E8D9F75A973D63BB3 /* AquaActionButton.swift in Sources */,
+				BFB4DE7FB4571928C138173C /* AquaDurationField.swift in Sources */,
+				F47FBCE0A736F6290671CD1A /* AquaFocusRing.swift in Sources */,
+				23DDDB0A2401243D3A59A653 /* AquaGlassMaterial.swift in Sources */,
+				489083B688FD008D40E9A48F /* AquaHelpTag.swift in Sources */,
+				FEED42A5BCF3D21B4865BA8B /* AquaPopUpButton.swift in Sources */,
+				59BD8359763C2FA6AD889BD4 /* AquaPopUpMenuPresentation.swift in Sources */,
+				1B17F810EB16337965090CFF /* AquaPopUpMenuView.swift in Sources */,
+				7FD022C8758A4698DE5742B3 /* AquaPushButton.swift in Sources */,
+				EAB6AB41D0426F7F40E7E56B /* AquaSelectionButton.swift in Sources */,
+				019B665B99A0BF3CACA175D4 /* AquaTypography.swift in Sources */,
+				8191453E09345F4937BD8C3F /* AquaVolumeSlider.swift in Sources */,
+				54362416BB0047D035E93E1C /* AquaWindow.swift in Sources */,
+				F86D9979982D228B31067FBB /* AquaWindowButton.swift in Sources */,
+				4581A95C550537CABFA97793 /* AquaWindowButtonGroup.swift in Sources */,
+				32245ED8BCADC9440AF857C3 /* BrushedMetalBackgroundView.swift in Sources */,
+				B38E6DC9AF0AE4389F241C29 /* CompletionSoundPlayer.swift in Sources */,
+				0B7D4500250B9E8319841170 /* Countdown.swift in Sources */,
+				E7419FAC1553EC81F6913D3D /* CountdownDuration.swift in Sources */,
+				F20F67400485AFAD0115384F /* DurationInputHistory.swift in Sources */,
+				45FDDDC0499EB397AC881ABF /* GeneralSettingsViewController.swift in Sources */,
+				BB8879810B6D335D8B5BAA37 /* LCDGlassView.swift in Sources */,
+				9E051FCFD73A5E3861A5CEFA /* LCDMaterial.swift in Sources */,
+				28E6A7DF3CA65E2B62DA32C8 /* LCDProgressIndicator.swift in Sources */,
+				0588614706F959905691BB13 /* LCDStatusView.swift in Sources */,
+				AFB4A74FF0BB07B39A4FB66E /* LCDTimeField.swift in Sources */,
+				A8416A76D5B0B5FBDD07EE4B /* MainWindowController.swift in Sources */,
+				FC2DFDA65A801B5B39FA3CBC /* MinuteDial.swift in Sources */,
+				149C83D0C64FA0964C033306 /* NotificationService.swift in Sources */,
+				1F3EAD68FA0352A5E704C8CC /* QuitConfirmationPanel.swift in Sources */,
+				14DE5190DF76667DE985A85D /* ReminderSettingsViewController.swift in Sources */,
+				A0437E6F60F6B5F910794C34 /* SettingsLayout.swift in Sources */,
+				DF59CE6F73705FEFEB8547D2 /* SettingsToolbarToggle.swift in Sources */,
+				3106BC492EAF448EE9A37A0E /* SettingsWindowController.swift in Sources */,
+				F8D14F5355EFBA7822A7BA8E /* TigerAquaBackgroundView.swift in Sources */,
+				EFE35B6A08F2D70A911C1942 /* TigerWindowShadow.swift in Sources */,
+				26AAA6D4D626E230F3C8B2EB /* TimerDisplayView.swift in Sources */,
+				3C3AAA81D809B564931C9654 /* TimerView.swift in Sources */,
+				0CB32963A3A9552BC36B2C8B /* TimerViewController.swift in Sources */,
+				FB33D7D68FCF9C4EC3B20BB0 /* WindowContentViewController.swift in Sources */,
+				119AFC87168BDA2E11209497 /* WindowTitlebarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935799C56B0868B47A34A2F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BBD73A1DC3CE2D346C732B /* Countdown.swift in Sources */,
+				EAC6C7536288A6CDA0279870 /* CountdownDuration.swift in Sources */,
+				E87E9CE7CD6894538295FF3E /* CountdownDurationTests.swift in Sources */,
+				DAA86ED3B0DB82BBD4CEF452 /* CountdownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01850040DDFEB3C36F62FB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aquatimer.AquaTimerTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		26557B6377154CF511EEFE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AquaTimer/Resources/AquaTimer.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AquaTimer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aquatimer.AquaTimer;
+				PRODUCT_NAME = AquaTimer;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2B88D7015E89DBDA5A82F8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aquatimer.AquaTimerTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AD6A5C7AFC7CFCAAFD01FBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C9E63479A7CAAD41FFA4AD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		FBAF2D1B84090E6C414B62C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AquaTimer/Resources/AquaTimer.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AquaTimer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aquatimer.AquaTimer;
+				PRODUCT_NAME = AquaTimer;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0924136D26EB17D171F7781F /* Build configuration list for PBXNativeTarget "AquaTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26557B6377154CF511EEFE25 /* Debug */,
+				FBAF2D1B84090E6C414B62C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0B247E4A4B14F277723CA8A6 /* Build configuration list for PBXNativeTarget "AquaTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01850040DDFEB3C36F62FB37 /* Debug */,
+				2B88D7015E89DBDA5A82F8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B27096010521A9768F85A39 /* Build configuration list for PBXProject "AquaTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E63479A7CAAD41FFA4AD41 /* Debug */,
+				AD6A5C7AFC7CFCAAFD01FBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EED2A765AECA14AA42C853C /* Project object */;
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1120" height="760" viewBox="0 0 1120 760" role="img" aria-labelledby="title description">
+  <title id="title">AquaTimer 液晶显示区材质样稿</title>
+  <desc id="description">反射式段码液晶模组：固定六位 DSEG 数字、微弱未激活段、24 格进度电极、状态符号、细微颗粒与保护片反射。</desc>
+  <defs>
+    <linearGradient id="contextMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfdfdf"/>
+      <stop offset=".35" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#b3b3b3"/>
+    </linearGradient>
+    <linearGradient id="lcdBezel" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="142">
+      <stop offset="0" stop-color="#737c67"/>
+      <stop offset=".08" stop-color="#89937b"/>
+      <stop offset=".45" stop-color="#a4ae95"/>
+      <stop offset=".90" stop-color="#c7d0b6"/>
+      <stop offset="1" stop-color="#dce3cc"/>
+    </linearGradient>
+    <linearGradient id="lcdFace" gradientUnits="userSpaceOnUse" x1="0" y1="2" x2="0" y2="140">
+      <stop offset="0" stop-color="#b8c1a3"/>
+      <stop offset=".19" stop-color="#bec7aa"/>
+      <stop offset=".58" stop-color="#c2cbae"/>
+      <stop offset="1" stop-color="#bbc4a6"/>
+    </linearGradient>
+    <filter id="lcdGrain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".72 .72" numOctaves="1" seed="29" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0" result="grayGrain"/>
+      <feComposite in="SourceGraphic" in2="grayGrain" operator="arithmetic" k1="0" k2="1" k3=".018" k4="-.009"/>
+    </filter>
+    <linearGradient id="lcdTopInset" gradientUnits="userSpaceOnUse" x1="0" y1="2" x2="0" y2="20">
+      <stop offset="0" stop-color="#27301b" stop-opacity=".25"/>
+      <stop offset=".24" stop-color="#27301b" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#27301b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lcdSideInset" gradientUnits="userSpaceOnUse" x1="2" y1="0" x2="13" y2="0">
+      <stop offset="0" stop-color="#27301b" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#27301b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lcdReflection" gradientUnits="userSpaceOnUse" x1="0" y1="2" x2="0" y2="62">
+      <stop offset="0" stop-color="#fff" stop-opacity=".10"/>
+      <stop offset=".65" stop-color="#fff" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="lcdScreenClip"><rect x="2" y="2" width="428" height="138" rx="1.5"/></clipPath>
+    <g id="lcdBackground">
+      <rect x=".5" y=".5" width="431" height="141" rx="3" fill="#68715c"/>
+      <rect x="1.2" y="1.2" width="429.6" height="139.6" rx="2.3" fill="url(#lcdBezel)"/>
+      <g clip-path="url(#lcdScreenClip)">
+        <rect x="2" y="2" width="428" height="138" fill="url(#lcdFace)" filter="url(#lcdGrain)"/>
+      </g>
+    </g>
+    <path id="lcdGlyphDash" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z"/>
+    <path id="lcdGlyphColon" d="M9.4500 38.7180 Q9.7200 38.0700 9.7200 37.4220 Q9.7200 36.7740 9.4500 36.1260 Q9.1800 35.4780 8.7480 35.0460 Q8.3160 34.6140 7.6680 34.3440 Q7.0200 34.0740 6.3720 34.0740 Q5.7240 34.0740 5.0760 34.3440 Q4.4280 34.6140 3.9960 35.0460 Q3.5640 35.4780 3.2940 36.1260 Q3.0240 36.7740 3.0240 37.4220 Q3.0240 38.0700 3.2940 38.7180 Q3.5640 39.3120 3.9960 39.7440 Q4.5360 40.2300 5.0760 40.5000 Q5.5620 40.7160 6.3720 40.7160 Q7.1820 40.7160 7.6680 40.5000 Q8.2080 40.2300 8.7480 39.7440 Q9.1800 39.3120 9.4500 38.7180 Z M7.5060 16.4700 Q7.7760 15.8220 7.7760 15.1740 Q7.7760 14.5260 7.5060 13.8780 Q7.2360 13.2300 6.8040 12.7980 Q6.3720 12.3660 5.7240 12.0960 Q5.0760 11.8260 4.4280 11.8260 Q3.7800 11.8260 3.1320 12.0960 Q2.4840 12.3660 2.0520 12.7980 Q1.6200 13.2300 1.3500 13.8780 Q1.0800 14.5260 1.0800 15.1740 Q1.0800 15.8220 1.3500 16.4700 Q1.6200 17.0640 2.0520 17.4960 Q2.5920 18.0360 3.1320 18.2520 Q3.6180 18.4680 4.4280 18.4680 Q5.2380 18.4680 5.7240 18.2520 Q6.2640 18.0360 6.8040 17.4960 Q7.2360 17.0640 7.5060 16.4700 Z"/>
+    <path id="lcdGlyph0" d="M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <path id="lcdGlyph1" d="M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z"/>
+    <path id="lcdGlyph2" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <path id="lcdGlyph3" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <path id="lcdGlyph4" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z"/>
+    <path id="lcdGlyph5" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <path id="lcdGlyph6" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <path id="lcdGlyph7" d="M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z"/>
+    <path id="lcdGlyph8" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <path id="lcdGlyph9" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z"/>
+    <g id="lcdContents">
+      <text x="20" y="27" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="11" fill="#303c28">剩余时间</text>
+      <g transform="translate(364 16)" fill="#333e2b">
+        <path d="M2 1.5 L10.5 6 L2 10.5 Z"/>
+        <g opacity=".045">
+          <path d="M20 1.5 h3 v9 h-3 Z M25 1.5 h3 v9 h-3 Z"/>
+          <path d="M37.5 9 L39 7.5 V4.5 C39 .8 45 .8 45 4.5 V7.5 L46.5 9 Z" fill="none" stroke="#333e2b" stroke-width="1.25" stroke-linejoin="round"/>
+          <ellipse cx="42" cy="10.75" rx="1" ry=".75"/>
+        </g>
+      </g>
+      <g fill="#333e2b" opacity=".045">
+        <use xlink:href="#lcdGlyph8" transform="translate(73.0080 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph8" transform="translate(117.0720 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyphColon" transform="translate(161.1360 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph8" transform="translate(171.9360 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph8" transform="translate(216.0000 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyphColon" transform="translate(260.0640 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph8" transform="translate(270.8640 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph8" transform="translate(314.9280 96) scale(1 -1)"/>
+      </g>
+      <g fill="#333e2b">
+        <use xlink:href="#lcdGlyph0" transform="translate(73.0080 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph0" transform="translate(117.0720 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyphColon" transform="translate(161.1360 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph2" transform="translate(171.9360 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph5" transform="translate(216.0000 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyphColon" transform="translate(260.0640 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph0" transform="translate(270.8640 96) scale(1 -1)"/>
+        <use xlink:href="#lcdGlyph0" transform="translate(314.9280 96) scale(1 -1)"/>
+      </g>
+      <rect x="20.0000" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="36.4167" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="52.8333" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="69.2500" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="85.6667" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="102.0833" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="118.5000" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="134.9167" y="119" width="14.4167" height="6" fill="#333e2b" opacity="1"/> <rect x="151.3333" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="167.7500" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="184.1667" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="200.5833" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="217.0000" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="233.4167" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="249.8333" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="266.2500" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="282.6667" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="299.0833" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="315.5000" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="331.9167" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="348.3333" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="364.7500" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="381.1667" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/> <rect x="397.5833" y="119" width="14.4167" height="6" fill="#333e2b" opacity="0.045"/>
+    </g>
+    <g id="lcdOptics" clip-path="url(#lcdScreenClip)">
+      <rect x="2" y="2" width="428" height="60" fill="url(#lcdReflection)"/>
+      <rect x="2" y="2" width="428" height="18" fill="url(#lcdTopInset)"/>
+      <rect x="2" y="2" width="11" height="138" fill="url(#lcdSideInset)"/>
+      <rect x="2" y="2" width="11" height="138" fill="url(#lcdSideInset)" transform="translate(432 0) scale(-1 1)"/>
+      <path d="M3 139.4 H429" fill="none" stroke="#e0e6ce" stroke-opacity=".35" stroke-width=".7"/>
+    </g>
+    <g id="lcdPanel">
+      <use xlink:href="#lcdBackground"/>
+      <use xlink:href="#lcdContents"/>
+      <use xlink:href="#lcdOptics"/>
+    </g>
+  </defs>
+
+  <rect width="1120" height="760" fill="#f1f1f2"/>
+  <g font-family="Lucida Grande, STXihei, STHeiti, sans-serif" fill="#303330">
+    <text x="48" y="44" font-size="24" font-weight="bold">液晶显示区</text>
+    <text x="48" y="67" font-size="12" fill="#70756c">固定段码、电极进度条与反射式灰绿底板</text>
+    <text x="128" y="105" font-size="12" fill="#62695c">放大预览 2×</text>
+    <rect x="104.5" y="122.5" width="911" height="331" rx="7" fill="url(#contextMetal)" stroke="#969b93"/>
+    <rect x="105.5" y="123.5" width="909" height="329" rx="6" fill="none" stroke="#fff" stroke-opacity=".5"/>
+    <g transform="translate(128 146) scale(2)"><use xlink:href="#lcdPanel"/></g>
+
+    <text x="48" y="501" font-size="12" fill="#62695c">实际尺寸：432 × 142 pt</text>
+    <g transform="translate(48 522)"><use xlink:href="#lcdPanel"/></g>
+    <text x="592" y="501" font-size="12" fill="#62695c">屏幕边缘 4×</text>
+    <svg x="592" y="522" width="480" height="142" viewBox="0 0 120 35.5" overflow="hidden">
+      <use xlink:href="#lcdPanel"/>
+    </svg>
+    <rect x="592.5" y="522.5" width="479" height="141" fill="none" stroke="#a0a697" stroke-width=".7"/>
+    <text x="48" y="707" font-size="12" fill="#5e6656">屏幕底层、数字内容和表面光效分开，保留独立显示区。</text>
+    <text x="48" y="731" font-size="11" fill="#7c8275">数字轮廓来自随包 DSEG 字体；玻璃光效覆盖在固定段码与进度电极上方。</text>
+  </g>
+</svg>

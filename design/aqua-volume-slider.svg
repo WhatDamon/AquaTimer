@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="438" viewBox="0 0 860 438" role="img" aria-labelledby="title description">
+  <title id="title">AquaTimer 音量滑块样稿</title>
+  <desc id="description">参照 Apple 2005 年 HIG 图 14-33 的无刻度横向圆形滑块。灰色内凹轨道、无描边的蓝色圆形水滴把手和右侧百分比。展示正常、拖动、键盘聚焦和禁用，以及两个端点。</desc>
+  <defs>
+    <pattern id="stripes" patternUnits="userSpaceOnUse" width="2" height="2">
+      <rect width="2" height="2" fill="#efefef"/>
+      <path d="M0 0h2v1H0z" fill="#e9e9e9"/>
+    </pattern>
+    <linearGradient id="groove" x2="0" y2="1">
+      <stop offset="0" stop-color="#656b73"/>
+      <stop offset=".24" stop-color="#7b828b"/>
+      <stop offset=".67" stop-color="#a5adb5"/>
+      <stop offset="1" stop-color="#c4cad0"/>
+    </linearGradient>
+    <linearGradient id="grooveDisabled" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8adb3"/>
+      <stop offset=".37" stop-color="#bbc0c5"/>
+      <stop offset="1" stop-color="#d7dade"/>
+    </linearGradient>
+    <!-- The colored body, transmitted light, and surface reflection share one circular silhouette. -->
+    <radialGradient id="blueLens" gradientUnits="userSpaceOnUse" cx="7.42" cy="12.5" r="12.5">
+      <stop offset="0" stop-color="#aedff8"/>
+      <stop offset=".25" stop-color="#8bcdf1"/>
+      <stop offset=".49" stop-color="#63b0e1"/>
+      <stop offset=".69" stop-color="#4090dc"/>
+      <stop offset=".87" stop-color="#2d6ab7"/>
+      <stop offset="1" stop-color="#244f86"/>
+    </radialGradient>
+    <!-- Shade the sides through the glass while the center stays clear. -->
+    <linearGradient id="lensSideShading" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#143963" stop-opacity=".31"/>
+      <stop offset=".15" stop-color="#174282" stop-opacity=".20"/>
+      <stop offset=".30" stop-color="#1e4b7c" stop-opacity=".08"/>
+      <stop offset=".43" stop-color="#1e4b7c" stop-opacity="0"/>
+      <stop offset=".57" stop-color="#1e4b7c" stop-opacity="0"/>
+      <stop offset=".70" stop-color="#1e4b7c" stop-opacity=".08"/>
+      <stop offset=".85" stop-color="#174282" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#143963" stop-opacity=".31"/>
+    </linearGradient>
+    <radialGradient id="bottomLight">
+      <stop offset="0" stop-color="#e8fbff" stop-opacity=".65"/>
+      <stop offset=".42" stop-color="#c9f4ff" stop-opacity=".50"/>
+      <stop offset=".74" stop-color="#a8e8fe" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#a8e8fe" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="reflection" gradientUnits="userSpaceOnUse" x1="7.5" y1="1.85" x2="7.5" y2="6.65">
+      <stop offset="0" stop-color="#ecf7ff" stop-opacity=".86"/>
+      <stop offset=".32" stop-color="#ecf3ff" stop-opacity=".58"/>
+      <stop offset=".65" stop-color="#d2e6ff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#c0e6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="specularPeak" gradientUnits="userSpaceOnUse" x1="7.5" y1="2" x2="7.5" y2="3.6">
+      <stop offset="0" stop-color="#fff" stop-opacity=".56"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pressedDepth" x2="0" y2="1">
+      <stop offset="0" stop-color="#071e3f" stop-opacity=".36"/>
+      <stop offset=".55" stop-color="#071e3f" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#071e3f" stop-opacity=".08"/>
+    </linearGradient>
+    <radialGradient id="disabledLens" gradientUnits="userSpaceOnUse" cx="7.5" cy="12.4" r="11.6">
+      <stop offset="0" stop-color="#f1f3f5"/>
+      <stop offset=".48" stop-color="#d8dde2"/>
+      <stop offset="1" stop-color="#9ca7b3"/>
+    </radialGradient>
+    <filter id="thumbShadow" x="-24%" y="-24%" width="148%" height="155%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".47"/>
+    </filter>
+    <filter id="softReflection" x="-30%" y="-70%" width="160%" height="240%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".21"/>
+    </filter>
+    <filter id="focusGlow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".62"/>
+    </filter>
+    <circle id="lensOutline" cx="7.5" cy="7.5" r="6.65"/>
+    <clipPath id="lensClip"><use xlink:href="#lensOutline"/></clipPath>
+    <g id="lensReflection">
+      <path d="M2.65 4.91 C2.94 3.08 5.17 1.83 7.46 1.82
+               C9.72 1.81 11.91 3.07 12.35 4.83
+               C11.90 5.89 9.87 6.57 7.52 6.60
+               C5.08 6.60 3.10 6.00 2.65 4.91 Z"
+            fill="url(#reflection)" filter="url(#softReflection)"/>
+      <path d="M4.43 3.26 C5.00 2.50 6.22 2.03 7.50 2.05
+               C8.79 2.05 9.87 2.51 10.48 3.18
+               C9.49 2.94 8.46 2.91 7.48 2.93
+               C6.32 2.95 5.29 3.10 4.43 3.26 Z"
+            fill="url(#specularPeak)" filter="url(#softReflection)"/>
+    </g>
+    <g id="track">
+      <rect x="3" y="9" width="204" height="6" rx="3" fill="#fff" opacity=".73"/>
+      <rect x="3.25" y="8.35" width="203.5" height="5.65" rx="2.825" fill="url(#groove)" stroke="#828990" stroke-width=".42"/>
+    </g>
+    <g id="trackDisabled">
+      <rect x="3" y="9" width="204" height="6" rx="3" fill="#fff" opacity=".57"/>
+      <rect x="3.25" y="8.35" width="203.5" height="5.65" rx="2.825" fill="url(#grooveDisabled)" stroke="#b1b6bc" stroke-width=".42"/>
+    </g>
+    <g id="thumbBody">
+      <use xlink:href="#lensOutline" y=".64" fill="#273543" opacity=".27" filter="url(#thumbShadow)"/>
+      <use xlink:href="#lensOutline" fill="url(#blueLens)"/>
+      <use xlink:href="#lensOutline" fill="url(#lensSideShading)"/>
+    </g>
+    <g id="thumbNormal">
+      <use xlink:href="#thumbBody"/>
+      <g clip-path="url(#lensClip)">
+        <ellipse cx="7.48" cy="12.52" rx="6.85" ry="3.34" fill="url(#bottomLight)"/>
+        <use xlink:href="#lensReflection"/>
+      </g>
+    </g>
+    <g id="thumbDragging">
+      <use xlink:href="#thumbBody"/>
+      <use xlink:href="#lensOutline" fill="url(#pressedDepth)"/>
+      <g clip-path="url(#lensClip)">
+        <ellipse cx="7.48" cy="12.86" rx="6.1" ry="2.89" fill="url(#bottomLight)" opacity=".62"/>
+        <use xlink:href="#lensReflection" y=".32" opacity=".6"/>
+      </g>
+    </g>
+    <g id="thumbFocused">
+      <circle cx="7.5" cy="7.5" r="8.55" fill="#61a9d7" opacity=".78" filter="url(#focusGlow)"/>
+      <use xlink:href="#thumbNormal"/>
+    </g>
+    <g id="thumbDisabled">
+      <use xlink:href="#lensOutline" y=".62" fill="#7c838a" opacity=".17" filter="url(#thumbShadow)"/>
+      <use xlink:href="#lensOutline" fill="url(#disabledLens)"/>
+      <use xlink:href="#lensReflection" opacity=".48"/>
+    </g>
+  </defs>
+  <rect width="860" height="438" fill="#fafafa"/>
+  <g font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" fill="#252930">
+    <text x="32" y="43" font-size="24">音量滑块</text>
+    <text x="828" y="41" font-size="12" fill="#59616a" text-anchor="end">210 pt 轨道占位 · 圆形水滴把手</text>
+
+    <rect x="32" y="66" width="796" height="118" fill="url(#stripes)"/>
+    <text x="52" y="93" font-size="12" fill="#515963">正常 · 3×</text>
+    <g transform="translate(52 104) scale(3)">
+      <use xlink:href="#track"/>
+      <use xlink:href="#thumbNormal" x="136.5" y="3.65"/>
+      <text x="250" y="16" text-anchor="end">70%</text>
+    </g>
+
+    <text x="32" y="215" font-size="12" fill="#515963">原尺寸 · 1×</text>
+    <rect x="32" y="227" width="796" height="153" fill="url(#stripes)"/>
+    <g font-size="11" fill="#515963">
+      <text x="58" y="266">最小</text>
+      <text x="58" y="308">最大</text>
+      <text x="58" y="350">禁用</text>
+      <text x="445" y="266">正常</text>
+      <text x="445" y="308">拖动中</text>
+      <text x="445" y="350">键盘聚焦</text>
+    </g>
+    <g transform="translate(116 251)">
+      <use xlink:href="#track"/>
+      <use xlink:href="#thumbNormal" y="3.65"/>
+      <text x="260" y="16" text-anchor="end">0%</text>
+    </g>
+    <g transform="translate(116 293)">
+      <use xlink:href="#track"/>
+      <use xlink:href="#thumbNormal" x="195" y="3.65"/>
+      <text x="260" y="16" text-anchor="end">100%</text>
+    </g>
+    <g transform="translate(116 335)">
+      <use xlink:href="#trackDisabled"/>
+      <use xlink:href="#thumbDisabled" x="136.5" y="3.65"/>
+      <text x="260" y="16" text-anchor="end" fill="#838b94">70%</text>
+    </g>
+    <g transform="translate(536 251)">
+      <use xlink:href="#track"/>
+      <use xlink:href="#thumbNormal" x="136.5" y="3.65"/>
+      <text x="260" y="16" text-anchor="end">70%</text>
+    </g>
+    <g transform="translate(536 293)">
+      <use xlink:href="#track"/>
+      <use xlink:href="#thumbDragging" x="93.6" y="3.65"/>
+      <text x="260" y="16" text-anchor="end">48%</text>
+    </g>
+    <g transform="translate(536 335)">
+      <use xlink:href="#track"/>
+      <use xlink:href="#thumbFocused" x="136.5" y="3.65"/>
+      <text x="260" y="16" text-anchor="end">70%</text>
+    </g>
+    <text x="32" y="416" font-size="11" fill="#59616a">Apple Human Interface Guidelines（2005）第 253–254 页 · 图 14-33</text>
+  </g>
+</svg>

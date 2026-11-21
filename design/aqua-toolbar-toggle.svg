@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1128" height="565" viewBox="0 0 1128 565" role="img" aria-labelledby="title description">
+  <title id="title">AquaTimer 工具栏显示开关</title>
+  <desc id="description">同一设置页在工具栏展开和收起时的样子，以及标题栏开关五倍放大的常态、按下和收起状态。样稿中两扇窗口顶边对齐，收起后高度减少 62 点。</desc>
+  <defs>
+    <pattern id="formStripes" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#efefef"/>
+      <path d="M0 0h2v1H0z" fill="#e9e9e9"/>
+    </pattern>
+    <pattern id="toolbarStripes" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#f5f5f5"/>
+      <path d="M0 0h2v1H0z" fill="#f0f0f0"/>
+    </pattern>
+    <linearGradient id="titlebar" x2="0" y2="1">
+      <stop stop-color="#fafafa"/>
+      <stop offset=".14" stop-color="#eeeeee"/>
+      <stop offset=".66" stop-color="#dedede"/>
+      <stop offset="1" stop-color="#d1d1d1"/>
+    </linearGradient>
+    <linearGradient id="socket" x2="0" y2="1">
+      <stop stop-color="#434348"/>
+      <stop offset=".20" stop-color="#6c6d73"/>
+      <stop offset=".49" stop-color="#65676d"/>
+      <stop offset=".71" stop-color="#77787f"/>
+      <stop offset="1" stop-color="#454349"/>
+    </linearGradient>
+    <linearGradient id="cap" x2="0" y2="1">
+      <stop stop-color="#b1b7bf"/>
+      <stop offset=".18" stop-color="#e2e8ee"/>
+      <stop offset=".42" stop-color="#cdd3da"/>
+      <stop offset=".52" stop-color="#d1d6dd"/>
+      <stop offset=".76" stop-color="#f3f7fa"/>
+      <stop offset=".86" stop-color="#f7f9fb"/>
+      <stop offset="1" stop-color="#c9cbd2"/>
+    </linearGradient>
+    <linearGradient id="capSideShade">
+      <stop stop-color="#656970" stop-opacity=".54"/>
+      <stop offset=".18" stop-color="#68717b" stop-opacity=".13"/>
+      <stop offset=".31" stop-color="#68717b" stop-opacity="0"/>
+      <stop offset=".69" stop-color="#68717b" stop-opacity="0"/>
+      <stop offset=".82" stop-color="#68717b" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#656970" stop-opacity=".54"/>
+    </linearGradient>
+    <linearGradient id="glint" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="speakerMetal" x2="0" y2="1">
+      <stop stop-color="#e1e8ed"/>
+      <stop offset="1" stop-color="#9baab7"/>
+    </linearGradient>
+    <linearGradient id="previewGlass" x2="0" y2="1">
+      <stop stop-color="#eee"/>
+      <stop offset=".42" stop-color="#fff"/>
+      <stop offset=".48" stop-color="#dedfe2"/>
+      <stop offset="1" stop-color="#fafafa"/>
+    </linearGradient>
+    <linearGradient id="blue" x2="0" y2="1">
+      <stop stop-color="#507db5"/>
+      <stop offset=".24" stop-color="#a6d1f2"/>
+      <stop offset=".56" stop-color="#61abe0"/>
+      <stop offset="1" stop-color="#c9f0fc"/>
+    </linearGradient>
+    <linearGradient id="groove" x2="0" y2="1">
+      <stop stop-color="#757b82"/>
+      <stop offset="1" stop-color="#b8c0c7"/>
+    </linearGradient>
+    <radialGradient id="closeLamp" cx=".45" cy=".77" r=".75">
+      <stop stop-color="#fbd4d7"/>
+      <stop offset=".73" stop-color="#d1727e"/>
+      <stop offset="1" stop-color="#803f4c"/>
+    </radialGradient>
+    <linearGradient id="idleLamp" x2="0" y2="1">
+      <stop stop-color="#9fa4a7"/>
+      <stop offset="1" stop-color="#ebebeb"/>
+    </linearGradient>
+    <filter id="windowShadow" x="-8%" y="-10%" width="116%" height="126%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#34343a" flood-opacity=".24"/>
+    </filter>
+    <clipPath id="expandedWindow"><rect width="520" height="336" rx="7"/></clipPath>
+    <clipPath id="collapsedWindow"><rect width="520" height="274" rx="7"/></clipPath>
+    <clipPath id="detailCrop"><rect width="144" height="110" rx="6"/></clipPath>
+
+    <!-- One narrow well surrounds the glass. A soft lower reflection comes from the titlebar. -->
+    <filter id="socketReflection" x="-10%" y="-25%" width="120%" height="150%">
+      <feGaussianBlur stdDeviation=".36"/>
+    </filter>
+    <rect id="toggleFace" x="1.18" y="1.23" width="17.64" height="7.39" rx="3.68"/>
+    <g id="toggleExpanded">
+      <rect x=".02" y=".68" width="19.96" height="9.12" rx="4.56" fill="#fafbff"
+            opacity=".66" filter="url(#socketReflection)"/>
+      <rect x=".25" y=".26" width="19.5" height="9.25" rx="4.6" fill="url(#socket)"/>
+      <use xlink:href="#toggleFace" fill="url(#cap)"/>
+      <use xlink:href="#toggleFace" fill="url(#capSideShade)"/>
+    </g>
+    <g id="togglePressed">
+      <use xlink:href="#toggleExpanded"/>
+      <use xlink:href="#toggleFace" fill="#394550" opacity=".20"/>
+    </g>
+    <g id="toggleCollapsed">
+      <use xlink:href="#toggleExpanded"/>
+      <use xlink:href="#toggleFace" fill="#50565d" opacity=".07"/>
+    </g>
+
+    <g id="windowHeader">
+      <rect width="520" height="22" fill="url(#titlebar)"/>
+      <path d="M0 21.75h520" stroke="#a3a3a3" stroke-width=".5"/>
+      <circle cx="16" cy="11" r="6.9" fill="url(#closeLamp)" stroke="#92545d" stroke-width=".45"/>
+      <ellipse cx="16" cy="7.9" rx="3.7" ry="1.65" fill="url(#glint)"/>
+      <circle cx="37.5" cy="11" r="6.9" fill="url(#idleLamp)" stroke="#9fa2a4" stroke-width=".48"/>
+      <circle cx="59" cy="11" r="6.9" fill="url(#idleLamp)" stroke="#9fa2a4" stroke-width=".48"/>
+      <text x="260" y="11" text-anchor="middle" dominant-baseline="central">提醒</text>
+    </g>
+    <g id="settingsToolbar">
+      <rect width="520" height="62" fill="url(#toolbarStripes)"/>
+      <rect x="78" width="64" height="61" fill="#000" opacity=".105"/>
+      <path d="M78.5 0v61m63 0V0" stroke="#000" stroke-opacity=".18"/>
+      <rect x="29" y="10" width="26" height="27" rx=".6" fill="url(#previewGlass)" stroke="#a5a5a5" stroke-width=".6"/>
+      <rect x="38.8" y="16.3" width="6.4" height="14.4" fill="#d5d5d5" stroke="#858585" stroke-width=".6"/>
+      <path d="M40 18h4.1v10.1H40z" fill="#f8f8f8"/>
+      <rect x="99" y="9" width="22" height="28.5" rx="2.1" fill="url(#speakerMetal)" stroke="#59646d" stroke-width=".65"/>
+      <circle cx="110" cy="16" r="3" fill="#465361" stroke="#26313a" stroke-width=".5"/>
+      <circle cx="110" cy="27.4" r="7" fill="#3e4e5b" stroke="#26313a" stroke-width=".6"/>
+      <circle cx="110" cy="27.4" r="3" fill="#778994"/>
+      <text x="42" y="52" text-anchor="middle" font-size="11">常规</text>
+      <text x="110" y="52" text-anchor="middle" font-size="11">提醒</text>
+      <path d="M0 61.5h520" stroke="#a8a8a8" stroke-width=".5"/>
+    </g>
+    <g id="settingsForm">
+      <text x="125" y="29" text-anchor="end">声音：</text>
+      <rect x="133" y="17.5" width="14.5" height="14.5" rx="2" fill="url(#blue)" stroke="#627d96" stroke-width=".6"/>
+      <path d="m135.2 24.3 4 4.4 10-12.2" fill="none" stroke="#274355" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="155" y="29">到时播放提示音</text>
+      <rect x="151" y="46" width="194" height="19" rx="3" fill="url(#previewGlass)" stroke="#85898e" stroke-width=".75"/>
+      <rect x="326" y="46.5" width="18.5" height="18" rx="2" fill="url(#blue)"/>
+      <path d="m331.7 54 3.5-3.3 3.5 3.3zm0 3 3.5 3.3 3.5-3.3z" fill="#32485d"/>
+      <text x="159" y="59.7">玻璃音（Glass）</text>
+      <rect x="354" y="46" width="66" height="19" rx="9.5" fill="url(#previewGlass)" stroke="#888b90" stroke-width=".78"/>
+      <text x="387" y="59.7" text-anchor="middle">试听</text>
+      <rect x="158" y="79.5" width="204" height="5.8" rx="2.9" fill="url(#groove)"/>
+      <circle cx="298" cy="82.4" r="6.65" fill="url(#blue)"/>
+      <text x="415" y="87" text-anchor="end">70%</text>
+      <text x="155" y="106" font-size="11" fill="#626262">仅调整本应用的提示音量。</text>
+      <rect x="151" y="118" width="194" height="19" rx="3" fill="url(#previewGlass)" stroke="#85898e" stroke-width=".75"/>
+      <rect x="326" y="118.5" width="18.5" height="18" rx="2" fill="url(#blue)"/>
+      <path d="m331.7 126 3.5-3.3 3.5 3.3zm0 3 3.5 3.3 3.5-3.3z" fill="#32485d"/>
+      <text x="159" y="131.7">播放三次</text>
+      <text x="155" y="157" font-size="11" fill="#626262">可从“计时器”菜单停止提醒，到时显示会保留。</text>
+      <text x="125" y="194" text-anchor="end">系统通知：</text>
+      <rect x="133" y="182.5" width="14.5" height="14.5" rx="2" fill="url(#previewGlass)" stroke="#7d858c" stroke-width=".6"/>
+      <text x="155" y="194">后台到时发送系统通知</text>
+      <text x="155" y="218" font-size="11" fill="#626262">开启时将请求系统通知权限。</text>
+    </g>
+    <g id="detailHeader">
+      <g clip-path="url(#detailCrop)">
+        <rect width="144" height="110" fill="url(#titlebar)"/>
+        <path d="M0 109.5h144" stroke="#a4a4a4"/>
+      </g>
+      <rect x=".5" y=".5" width="143" height="109" rx="5.5" fill="none" stroke="#babdc0"/>
+    </g>
+  </defs>
+  <rect width="1128" height="565" fill="#f7f8fa"/>
+  <g font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" fill="#24272c">
+    <text x="28" y="32" font-size="16">工具栏展开</text>
+    <text x="580" y="32" font-size="16">工具栏收起</text>
+    <g transform="translate(28 48)">
+      <rect width="520" height="336" rx="7" fill="#efefef" filter="url(#windowShadow)"/>
+      <g clip-path="url(#expandedWindow)">
+        <rect width="520" height="336" fill="url(#formStripes)"/>
+        <use xlink:href="#windowHeader"/>
+        <use xlink:href="#settingsToolbar" y="22"/>
+        <use xlink:href="#settingsForm" y="84"/>
+        <use xlink:href="#toggleExpanded" x="490" y="6"/>
+      </g>
+      <rect x=".25" y=".25" width="519.5" height="335.5" rx="6.75" fill="none" stroke="#a6a6a6" stroke-width=".5"/>
+    </g>
+    <g transform="translate(580 48)">
+      <rect width="520" height="274" rx="7" fill="#efefef" filter="url(#windowShadow)"/>
+      <g clip-path="url(#collapsedWindow)">
+        <rect width="520" height="274" fill="url(#formStripes)"/>
+        <use xlink:href="#windowHeader"/>
+        <use xlink:href="#settingsForm" y="22"/>
+        <use xlink:href="#toggleCollapsed" x="490" y="6"/>
+      </g>
+      <rect x=".25" y=".25" width="519.5" height="273.5" rx="6.75" fill="none" stroke="#a6a6a6" stroke-width=".5"/>
+    </g>
+    <path d="M585 324h8m-4 0v60m-4 0h8" fill="none" stroke="#929aa4"/>
+    <text x="602" y="358" fill="#545c67">收起后减少 62 pt</text>
+    <path d="M28 408h1072" stroke="#d8dce1"/>
+    <text x="28" y="447" font-size="15">标题栏开关 · 5×</text>
+    <text x="28" y="470" fill="#545c67">20 × 10 pt</text>
+    <text x="28" y="492" font-size="11" fill="#545c67">Apple HIG 图 13-8</text>
+    <g transform="translate(230 426)">
+      <use xlink:href="#detailHeader"/>
+      <use xlink:href="#toggleExpanded" transform="translate(22 30) scale(5)"/>
+      <text x="72" y="129" text-anchor="middle">常态 · 隐藏工具栏</text>
+    </g>
+    <g transform="translate(416 426)">
+      <use xlink:href="#detailHeader"/>
+      <use xlink:href="#togglePressed" transform="translate(22 30) scale(5)"/>
+      <text x="72" y="129" text-anchor="middle">按住</text>
+    </g>
+    <g transform="translate(602 426)">
+      <use xlink:href="#detailHeader"/>
+      <use xlink:href="#toggleCollapsed" transform="translate(22 30) scale(5)"/>
+      <text x="72" y="129" text-anchor="middle">已收起 · 显示工具栏</text>
+    </g>
+  </g>
+</svg>

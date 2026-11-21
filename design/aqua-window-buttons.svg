@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="title description">
+  <title id="title">AquaTimer 的 Aqua 窗口按钮材质样稿</title>
+  <desc id="description">红、黄、绿三颗玻璃按钮，展示 14 点实际尺寸，以及六倍放大的正常、悬停、按下和失焦状态。</desc>
+  <defs>
+    <!-- Each button is authored in a 14 × 14 coordinate space. -->
+    <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f5f5"/>
+      <stop offset=".08" stop-color="#e8e8e8"/>
+      <stop offset=".56" stop-color="#d3d3d3"/>
+      <stop offset="1" stop-color="#bdbdbd"/>
+    </linearGradient>
+    <linearGradient id="bezel" gradientUnits="userSpaceOnUse" x1="7" y1="0" x2="7" y2="14">
+      <stop offset="0" stop-color="#545454"/>
+      <stop offset=".30" stop-color="#747474"/>
+      <stop offset=".72" stop-color="#999999"/>
+      <stop offset="1" stop-color="#f8f8f8"/>
+    </linearGradient>
+    <linearGradient id="bezelInactive" gradientUnits="userSpaceOnUse" x1="7" y1="0" x2="7" y2="14">
+      <stop offset="0" stop-color="#989898"/>
+      <stop offset=".65" stop-color="#bcbcbc"/>
+      <stop offset="1" stop-color="#fcfcfc"/>
+    </linearGradient>
+    <radialGradient id="redLens" gradientUnits="userSpaceOnUse" cx="7" cy="11.6" r="10.8">
+      <stop offset="0" stop-color="#f9d6d9"/>
+      <stop offset=".24" stop-color="#eeb5be"/>
+      <stop offset=".49" stop-color="#cd7485"/>
+      <stop offset=".72" stop-color="#af3b4f"/>
+      <stop offset=".9" stop-color="#78242f"/>
+      <stop offset="1" stop-color="#361b20"/>
+    </radialGradient>
+    <radialGradient id="yellowLens" gradientUnits="userSpaceOnUse" cx="7" cy="11.6" r="10.8">
+      <stop offset="0" stop-color="#fff8bd"/>
+      <stop offset=".24" stop-color="#fbe58c"/>
+      <stop offset=".49" stop-color="#e9b332"/>
+      <stop offset=".72" stop-color="#c58b0c"/>
+      <stop offset=".9" stop-color="#806013"/>
+      <stop offset="1" stop-color="#3a301c"/>
+    </radialGradient>
+    <radialGradient id="greenLens" gradientUnits="userSpaceOnUse" cx="7" cy="11.6" r="10.8">
+      <stop offset="0" stop-color="#e3f0bf"/>
+      <stop offset=".24" stop-color="#c6dd91"/>
+      <stop offset=".49" stop-color="#93b84b"/>
+      <stop offset=".72" stop-color="#648c23"/>
+      <stop offset=".9" stop-color="#405f1a"/>
+      <stop offset="1" stop-color="#24301b"/>
+    </radialGradient>
+    <radialGradient id="grayLens" gradientUnits="userSpaceOnUse" cx="7" cy="11.6" r="10.8">
+      <stop offset="0" stop-color="#f5f5f5"/>
+      <stop offset=".26" stop-color="#ebebeb"/>
+      <stop offset=".6" stop-color="#d1d1d1"/>
+      <stop offset="1" stop-color="#989898"/>
+    </radialGradient>
+    <radialGradient id="edgeDepth" gradientUnits="userSpaceOnUse" cx="7" cy="7" r="6.25">
+      <stop offset=".58" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".86" stop-color="#000" stop-opacity=".045"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </radialGradient>
+    <linearGradient id="reflection" gradientUnits="userSpaceOnUse" x1="7" y1="1.6" x2="7" y2="5.2">
+      <stop offset="0" stop-color="#fff" stop-opacity=".94"/>
+      <stop offset=".42" stop-color="#fff" stop-opacity=".73"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pressedDepth" gradientUnits="userSpaceOnUse" x1="7" y1="1" x2="7" y2="12">
+      <stop offset="0" stop-color="#000" stop-opacity=".35"/>
+      <stop offset=".55" stop-color="#000" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="socketShadow" x="-30%" y="-30%" width="160%" height="170%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy=".42" stdDeviation=".28" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+    <filter id="softReflection" x="-30%" y="-70%" width="160%" height="240%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".34"/>
+    </filter>
+    <filter id="softTransmission" x="-50%" y="-70%" width="200%" height="240%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".68"/>
+    </filter>
+    <filter id="barShadow" x="-2%" y="-20%" width="104%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1" stdDeviation=".7" flood-color="#000" flood-opacity=".12"/>
+    </filter>
+    <clipPath id="lensClip"><circle cx="7" cy="7" r="6.13"/></clipPath>
+    <g id="socket">
+      <circle cx="7" cy="7" r="6.72" fill="url(#bezel)" filter="url(#socketShadow)"/>
+      <path d="M2.3 11.85 A6.65 6.65 0 0 0 11.7 11.85" fill="none" stroke="#fff" stroke-opacity=".48" stroke-width=".48"/>
+    </g>
+    <g id="glass">
+      <circle cx="7" cy="7" r="6.13" fill="url(#edgeDepth)"/>
+      <g clip-path="url(#lensClip)">
+        <ellipse cx="7" cy="10.9" rx="3.35" ry="1.65" fill="#fff" opacity=".17" filter="url(#softTransmission)"/>
+        <ellipse cx="7" cy="3.35" rx="3.45" ry="1.70" fill="url(#reflection)" filter="url(#softReflection)"/>
+      </g>
+      <circle cx="7" cy="7" r="6.12" fill="none" stroke="#000" stroke-opacity=".20" stroke-width=".27"/>
+    </g>
+    <g id="pressedGlass">
+      <circle cx="7" cy="7" r="6.13" fill="url(#edgeDepth)"/>
+      <circle cx="7" cy="7" r="6.13" fill="url(#pressedDepth)"/>
+      <g clip-path="url(#lensClip)">
+        <ellipse cx="7" cy="11.1" rx="3.1" ry="1.45" fill="#fff" opacity=".08" filter="url(#softTransmission)"/>
+        <ellipse cx="7" cy="3.8" rx="3.35" ry="1.5" fill="url(#reflection)" opacity=".48" filter="url(#softReflection)"/>
+      </g>
+      <circle cx="7" cy="7" r="6.12" fill="none" stroke="#000" stroke-opacity=".35" stroke-width=".32"/>
+    </g>
+    <g id="closeGlyph" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="square">
+      <path d="M4.9 4.9 L9.1 9.1 M9.1 4.9 L4.9 9.1"/>
+    </g>
+    <g id="minimizeGlyph" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="square">
+      <path d="M4.45 7 H9.55"/>
+    </g>
+    <g id="zoomGlyph" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="square">
+      <path d="M4.45 7 H9.55 M7 4.45 V9.55"/>
+    </g>
+    <g id="redBody">
+      <use xlink:href="#socket"/>
+      <circle cx="7" cy="7" r="6.13" fill="url(#redLens)"/>
+    </g>
+    <g id="yellowBody">
+      <use xlink:href="#socket"/>
+      <circle cx="7" cy="7" r="6.13" fill="url(#yellowLens)"/>
+    </g>
+    <g id="greenBody">
+      <use xlink:href="#socket"/>
+      <circle cx="7" cy="7" r="6.13" fill="url(#greenLens)"/>
+    </g>
+    <g id="red">
+      <use xlink:href="#redBody"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="yellow">
+      <use xlink:href="#yellowBody"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="green">
+      <use xlink:href="#greenBody"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="redHover">
+      <use xlink:href="#redBody"/>
+      <use xlink:href="#closeGlyph" color="#fff" opacity=".3" transform="translate(0 .35)"/>
+      <use xlink:href="#closeGlyph" color="#651b28"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="yellowHover">
+      <use xlink:href="#yellowBody"/>
+      <use xlink:href="#minimizeGlyph" color="#fff" opacity=".35" transform="translate(0 .35)"/>
+      <use xlink:href="#minimizeGlyph" color="#705007"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="greenHover">
+      <use xlink:href="#greenBody"/>
+      <use xlink:href="#zoomGlyph" color="#fff" opacity=".35" transform="translate(0 .35)"/>
+      <use xlink:href="#zoomGlyph" color="#354b12"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="redPressed">
+      <use xlink:href="#redBody"/>
+      <use xlink:href="#closeGlyph" color="#4a101c" transform="translate(0 .3)"/>
+      <use xlink:href="#pressedGlass"/>
+    </g>
+    <g id="yellowPressed">
+      <use xlink:href="#yellowBody"/>
+      <use xlink:href="#minimizeGlyph" color="#594005" transform="translate(0 .3)"/>
+      <use xlink:href="#pressedGlass"/>
+    </g>
+    <g id="greenPressed">
+      <use xlink:href="#greenBody"/>
+      <use xlink:href="#zoomGlyph" color="#283b0b" transform="translate(0 .3)"/>
+      <use xlink:href="#pressedGlass"/>
+    </g>
+    <g id="greenCollapseHover">
+      <use xlink:href="#greenBody"/>
+      <use xlink:href="#minimizeGlyph" color="#fff" opacity=".35" transform="translate(0 .35)"/>
+      <use xlink:href="#minimizeGlyph" color="#354b12"/>
+      <use xlink:href="#glass"/>
+    </g>
+    <g id="greenCollapsePressed">
+      <use xlink:href="#greenBody"/>
+      <use xlink:href="#minimizeGlyph" color="#283b0b" transform="translate(0 .3)"/>
+      <use xlink:href="#pressedGlass"/>
+    </g>
+    <g id="inactive">
+      <circle cx="7" cy="7" r="6.72" fill="url(#bezelInactive)"/>
+      <circle cx="7" cy="7" r="6.13" fill="url(#grayLens)"/>
+      <use xlink:href="#glass" opacity=".55"/>
+    </g>
+  </defs>
+
+  <rect width="960" height="760" fill="#eeeef0"/>
+  <g font-family="Lucida Grande, STXihei, STHeiti, sans-serif" fill="#303033">
+    <text x="48" y="45" font-size="23" font-weight="bold">Aqua 窗口按钮</text>
+    <text x="48" y="68" font-size="12" fill="#69696d">玻璃材质样稿，包含实际尺寸与状态放大图</text>
+
+    <rect x="48" y="90" width="864" height="28" rx="7" fill="url(#titlebar)" filter="url(#barShadow)"/>
+    <path d="M55 90.5 H905" stroke="#fff" stroke-opacity=".6"/>
+    <g transform="translate(58 97)"><use xlink:href="#red"/></g>
+    <g transform="translate(80 97)"><use xlink:href="#yellow"/></g>
+    <g transform="translate(102 97)"><use xlink:href="#green"/></g>
+    <text x="480" y="109" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff" opacity=".65" transform="translate(0 1)">AquaTimer</text>
+    <text x="480" y="109" text-anchor="middle" font-size="13" font-weight="bold">AquaTimer</text>
+    <text x="48" y="141" font-size="11" fill="#727277">实际尺寸：14 × 14 pt</text>
+    <text x="912" y="141" text-anchor="end" font-size="11" fill="#727277">下方为 6 倍放大</text>
+
+    <g font-size="12" fill="#69696d">
+      <text x="48" y="184">状态</text>
+      <text x="320" y="184" text-anchor="middle">关闭</text>
+      <text x="540" y="184" text-anchor="middle">最小化</text>
+      <text x="760" y="184" text-anchor="middle">缩放</text>
+    </g>
+    <g stroke="#d7d7da" stroke-width="1">
+      <path d="M48 300.5 H912 M48 420.5 H912 M48 540.5 H912 M48 660.5 H912"/>
+    </g>
+
+    <text x="48" y="240" font-size="14">正常</text>
+    <text x="48" y="259" font-size="11" fill="#77777c">隐藏符号</text>
+    <g transform="translate(278 198) scale(6)"><use xlink:href="#red"/></g>
+    <g transform="translate(498 198) scale(6)"><use xlink:href="#yellow"/></g>
+    <g transform="translate(718 198) scale(6)"><use xlink:href="#green"/></g>
+
+    <text x="48" y="360" font-size="14">悬停</text>
+    <text x="48" y="379" font-size="11" fill="#77777c">整组显示符号</text>
+    <g transform="translate(278 318) scale(6)"><use xlink:href="#redHover"/></g>
+    <g transform="translate(498 318) scale(6)"><use xlink:href="#yellowHover"/></g>
+    <g transform="translate(718 318) scale(6)"><use xlink:href="#greenHover"/></g>
+
+    <text x="48" y="480" font-size="14">按下</text>
+    <text x="48" y="499" font-size="11" fill="#77777c">内凹、高光减弱</text>
+    <g transform="translate(278 438) scale(6)"><use xlink:href="#redPressed"/></g>
+    <g transform="translate(498 438) scale(6)"><use xlink:href="#yellowPressed"/></g>
+    <g transform="translate(718 438) scale(6)"><use xlink:href="#greenPressed"/></g>
+
+    <text x="48" y="600" font-size="14">失焦</text>
+    <text x="48" y="619" font-size="11" fill="#77777c">中性灰色玻璃</text>
+    <g transform="translate(278 558) scale(6)"><use xlink:href="#inactive"/></g>
+    <g transform="translate(498 558) scale(6)"><use xlink:href="#inactive"/></g>
+    <g transform="translate(718 558) scale(6)"><use xlink:href="#inactive"/></g>
+
+    <text x="48" y="703" font-size="12" fill="#55555b">光照由上方反射、下缘透光和周边暗部共同构成。</text>
+    <text x="48" y="726" font-size="11" fill="#77777c">视觉探索稿；每颗按钮的光学层与操作符号独立组织，便于后续转换为 AppKit 绘制。</text>
+  </g>
+</svg>

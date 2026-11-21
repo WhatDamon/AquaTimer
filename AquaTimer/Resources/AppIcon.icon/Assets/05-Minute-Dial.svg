@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>AquaTimer — desktop electronic timer</title>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a3a8ac" stop-opacity="1" />
+      <stop offset="0.18" stop-color="#c5c9cc" stop-opacity="1" />
+      <stop offset="0.48" stop-color="#e1e3e3" stop-opacity="1" />
+      <stop offset="0.57" stop-color="#d6d9da" stop-opacity="1" />
+      <stop offset="0.82" stop-color="#b9bec0" stop-opacity="1" />
+      <stop offset="1" stop-color="#969da1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="metalVertical" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.58" />
+      <stop offset="0.035" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="0.65" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="1" stop-color="#262c30" stop-opacity="0.26" />
+    </linearGradient>
+    <linearGradient id="chassis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#abb2b7" stop-opacity="1" />
+      <stop offset="0.6" stop-color="#666f75" stop-opacity="1" />
+      <stop offset="1" stop-color="#343c42" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#20262b" stop-opacity="1" />
+      <stop offset="0.7" stop-color="#353c42" stop-opacity="1" />
+      <stop offset="1" stop-color="#171c20" stop-opacity="1" />
+    </linearGradient>
+    <radialGradient id="ground">
+      <stop offset="0" stop-color="#131b23" stop-opacity="0.4" />
+      <stop offset="0.48" stop-color="#131b23" stop-opacity="0.15" />
+      <stop offset="1" stop-color="#131b23" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="socket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4d5552" stop-opacity="1" />
+      <stop offset="0.4" stop-color="#767c6e" stop-opacity="1" />
+      <stop offset="1" stop-color="#d2d8c3" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="lcd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#929e7d" stop-opacity="1" />
+      <stop offset="0.18" stop-color="#abb797" stop-opacity="1" />
+      <stop offset="0.65" stop-color="#bfc8ab" stop-opacity="1" />
+      <stop offset="1" stop-color="#b5c09e" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="lcdTopShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#222b1e" stop-opacity="0.32" />
+      <stop offset="0.17" stop-color="#222b1e" stop-opacity="0.06" />
+      <stop offset="0.4" stop-color="#222b1e" stop-opacity="0" />
+      <stop offset="1" stop-color="#222b1e" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.04" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#727b80" stop-opacity="1" />
+      <stop offset="0.18" stop-color="#d8dddf" stop-opacity="1" />
+      <stop offset="0.53" stop-color="#e9ebeb" stop-opacity="1" />
+      <stop offset="1" stop-color="#6f787e" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="dial" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="0.25" stop-color="#f5f6f1" stop-opacity="1" />
+      <stop offset="0.55" stop-color="#e6e8e2" stop-opacity="1" />
+      <stop offset="1" stop-color="#b5bcb6" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="dimple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#56615a" stop-opacity="1" />
+      <stop offset="0.38" stop-color="#869187" stop-opacity="1" />
+      <stop offset="1" stop-color="#d2d8ce" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="blueFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b91ae" stop-opacity="1" />
+      <stop offset="0.52" stop-color="#87adca" stop-opacity="1" />
+      <stop offset="0.68" stop-color="#b5d5eb" stop-opacity="1" />
+      <stop offset="1" stop-color="#d7ebf8" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="bluePane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8d9f4" stop-opacity="1" />
+      <stop offset="0.55" stop-color="#e1f2fe" stop-opacity="1" />
+      <stop offset="1" stop-color="#e9f7ff" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="silverFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9da7ad" stop-opacity="1" />
+      <stop offset="0.58" stop-color="#ccd1d4" stop-opacity="1" />
+      <stop offset="1" stop-color="#f1f3f2" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="silverPane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f8f8" stop-opacity="1" />
+      <stop offset="1" stop-color="#eceff0" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="grainLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.15" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="0.85" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="grainDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#344047" stop-opacity="0" />
+      <stop offset="0.15" stop-color="#344047" stop-opacity="1" />
+      <stop offset="0.85" stop-color="#344047" stop-opacity="1" />
+      <stop offset="1" stop-color="#344047" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="bodyTopEdge" x1="0" y1="121" x2="0" y2="245" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.88" />
+      <stop offset="0.18" stop-color="#ffffff" stop-opacity="0.54" />
+      <stop offset="0.65" stop-color="#ffffff" stop-opacity="0.13" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="bodyLowerEdge" x1="0" y1="713" x2="0" y2="842" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39444b" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#39444b" stop-opacity="0.07" />
+      <stop offset="1" stop-color="#39444b" stop-opacity="0.48" />
+    </linearGradient>
+    <linearGradient id="lcdLowerEdge" x1="0" y1="397" x2="0" y2="476" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f1f3da" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#f1f3da" stop-opacity="0.08" />
+      <stop offset="1" stop-color="#f1f3da" stop-opacity="0.64" />
+    </linearGradient>
+    <linearGradient id="dialEdge" x1="0" y1="550" x2="0" y2="768" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="0.42" stop-color="#ffffff" stop-opacity="0.34" />
+      <stop offset="0.7" stop-color="#69766e" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#69766e" stop-opacity="0.38" />
+    </linearGradient>
+    <linearGradient id="dialSpecular" x1="0" y1="554" x2="0" y2="694" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.72" />
+      <stop offset="0.36" stop-color="#ffffff" stop-opacity="0.48" />
+      <stop offset="0.7" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="slotBevel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59666d" stop-opacity="1" />
+      <stop offset="0.52" stop-color="#758087" stop-opacity="1" />
+      <stop offset="0.75" stop-color="#8a9599" stop-opacity="1" />
+      <stop offset="1" stop-color="#eef0ed" stop-opacity="1" />
+    </linearGradient>
+    <clipPath id="bodyClip">
+      <rect x="116" y="120" width="792" height="724" rx="72" />
+    </clipPath>
+    <clipPath id="screenClip">
+      <rect x="185" y="215" width="654" height="262" rx="16" />
+    </clipPath>
+    <path id="lcdGlyphDash" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z" />
+    <path id="lcdGlyphColon" d="M9.4500 38.7180 Q9.7200 38.0700 9.7200 37.4220 Q9.7200 36.7740 9.4500 36.1260 Q9.1800 35.4780 8.7480 35.0460 Q8.3160 34.6140 7.6680 34.3440 Q7.0200 34.0740 6.3720 34.0740 Q5.7240 34.0740 5.0760 34.3440 Q4.4280 34.6140 3.9960 35.0460 Q3.5640 35.4780 3.2940 36.1260 Q3.0240 36.7740 3.0240 37.4220 Q3.0240 38.0700 3.2940 38.7180 Q3.5640 39.3120 3.9960 39.7440 Q4.5360 40.2300 5.0760 40.5000 Q5.5620 40.7160 6.3720 40.7160 Q7.1820 40.7160 7.6680 40.5000 Q8.2080 40.2300 8.7480 39.7440 Q9.1800 39.3120 9.4500 38.7180 Z M7.5060 16.4700 Q7.7760 15.8220 7.7760 15.1740 Q7.7760 14.5260 7.5060 13.8780 Q7.2360 13.2300 6.8040 12.7980 Q6.3720 12.3660 5.7240 12.0960 Q5.0760 11.8260 4.4280 11.8260 Q3.7800 11.8260 3.1320 12.0960 Q2.4840 12.3660 2.0520 12.7980 Q1.6200 13.2300 1.3500 13.8780 Q1.0800 14.5260 1.0800 15.1740 Q1.0800 15.8220 1.3500 16.4700 Q1.6200 17.0640 2.0520 17.4960 Q2.5920 18.0360 3.1320 18.2520 Q3.6180 18.4680 4.4280 18.4680 Q5.2380 18.4680 5.7240 18.2520 Q6.2640 18.0360 6.8040 17.4960 Q7.2360 17.0640 7.5060 16.4700 Z" />
+    <path id="lcdGlyph0" d="M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <path id="lcdGlyph1" d="M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z" />
+    <path id="lcdGlyph2" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <path id="lcdGlyph3" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <path id="lcdGlyph4" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z" />
+    <path id="lcdGlyph5" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <path id="lcdGlyph6" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <path id="lcdGlyph7" d="M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z" />
+    <path id="lcdGlyph8" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M4.8600 2.4300 L3.3480 4.1040 L5.2920 26.4600 L8.4240 26.4600 L8.6400 26.1900 L11.6640 22.8960 L10.3140 7.4520 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <path id="lcdGlyph9" d="M31.4820 30.3480 L34.5600 26.9460 L30.9420 23.6520 L12.5280 23.6520 L9.4500 27.0000 L13.1220 30.3480 Z M8.7480 27.8100 L8.4780 27.5400 L5.4000 27.5400 L7.3440 49.8960 L9.1800 51.5700 L13.7160 46.5480 L12.3660 31.1040 Z M9.9900 52.3260 L11.8260 54.0000 L36.9360 54.0000 L38.5020 52.3260 L33.0480 47.3040 L14.5800 47.3040 Z M35.2620 26.1900 L35.5320 26.4060 L38.6640 26.4060 L36.7200 4.1040 L34.8840 2.4300 L30.3480 7.4520 L31.6980 22.8960 Z M39.2040 51.5700 L40.7160 49.8960 L38.7720 27.5400 L35.6400 27.5400 L35.4240 27.7560 L32.4000 31.0500 L33.7500 46.5480 Z M34.0740 1.6740 L32.2380 0.0000 L7.1280 0.0000 L5.5620 1.6740 L11.0160 6.6960 L29.4840 6.6960 Z" />
+    <clipPath id="startFaceClip">
+      <rect x="557.8" y="566.8" width="231.4" height="90.4" rx="21.2" />
+    </clipPath>
+    <linearGradient id="startBorder" x1="0" y1="566" x2="0" y2="658" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60727f" stop-opacity="0.95" />
+      <stop offset="0.5" stop-color="#73838d" stop-opacity="0.82" />
+      <stop offset="1" stop-color="#5e6d76" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="startContact" x1="0" y1="566" x2="0" y2="660.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#36444d" stop-opacity="0" />
+      <stop offset="0.55" stop-color="#36444d" stop-opacity="0" />
+      <stop offset="1" stop-color="#36444d" stop-opacity="0.27" />
+    </linearGradient>
+    <linearGradient id="startLowerLight" x1="0" y1="619.36" x2="0" y2="656.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.76" />
+    </linearGradient>
+    <clipPath id="resetFaceClip">
+      <rect x="557.8" y="697.8" width="231.4" height="62.4" rx="17.2" />
+    </clipPath>
+    <linearGradient id="resetBorder" x1="0" y1="697" x2="0" y2="761" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60727f" stop-opacity="0.95" />
+      <stop offset="0.5" stop-color="#73838d" stop-opacity="0.82" />
+      <stop offset="1" stop-color="#5e6d76" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="resetContact" x1="0" y1="697" x2="0" y2="763.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#36444d" stop-opacity="0" />
+      <stop offset="0.55" stop-color="#36444d" stop-opacity="0" />
+      <stop offset="1" stop-color="#36444d" stop-opacity="0.27" />
+    </linearGradient>
+    <linearGradient id="resetLowerLight" x1="0" y1="734.12" x2="0" y2="759.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.76" />
+    </linearGradient>
+  </defs>
+  <g id="minute-dial">
+    <path d="M343.000 528.000 L343.000 514.000" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M357.529 520.761 L358.157 514.794" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M371.900 523.037 L373.147 517.169" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M385.953 526.803 L387.807 521.097" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M399.536 532.017 L401.977 526.536" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M408.500 545.551 L415.500 533.426" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M424.702 546.547 L428.229 541.693" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M436.009 555.703 L440.024 551.244" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M446.297 565.991 L450.756 561.976" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M455.453 577.298 L460.307 573.771" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M456.449 593.500 L468.574 586.500" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M469.983 602.464 L475.464 600.023" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M475.197 616.047 L480.903 614.193" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M478.963 630.100 L484.831 628.853" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M481.239 644.471 L487.206 643.843" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M474.000 659.000 L488.000 659.000" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M481.239 673.529 L487.206 674.157" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M478.963 687.900 L484.831 689.147" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M475.197 701.953 L480.903 703.807" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M469.983 715.536 L475.464 717.977" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M456.449 724.500 L468.574 731.500" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M455.453 740.702 L460.307 744.229" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M446.297 752.009 L450.756 756.024" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M436.009 762.297 L440.024 766.756" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M424.702 771.453 L428.229 776.307" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M408.500 772.449 L415.500 784.574" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M399.536 785.983 L401.977 791.464" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M385.953 791.197 L387.807 796.903" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M371.900 794.963 L373.147 800.831" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M357.529 797.239 L358.157 803.206" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M343.000 790.000 L343.000 804.000" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M328.471 797.239 L327.843 803.206" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M314.100 794.963 L312.853 800.831" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M300.047 791.197 L298.193 796.903" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M286.464 785.983 L284.023 791.464" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M277.500 772.449 L270.500 784.574" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M261.298 771.453 L257.771 776.307" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M249.991 762.297 L245.976 766.756" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M239.703 752.009 L235.244 756.024" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M230.547 740.702 L225.693 744.229" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M229.551 724.500 L217.426 731.500" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M216.017 715.536 L210.536 717.977" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M210.803 701.953 L205.097 703.807" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M207.037 687.900 L201.169 689.147" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M204.761 673.529 L198.794 674.157" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M212.000 659.000 L198.000 659.000" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M204.761 644.471 L198.794 643.843" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M207.037 630.100 L201.169 628.853" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M210.803 616.047 L205.097 614.193" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M216.017 602.464 L210.536 600.023" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M229.551 593.500 L217.426 586.500" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M230.547 577.298 L225.693 573.771" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M239.703 565.991 L235.244 561.976" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M249.991 555.703 L245.976 551.244" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M261.298 546.547 L257.771 541.693" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M277.500 545.551 L270.500 533.426" stroke="#5f696b" stroke-width="2" stroke-linecap="round" opacity=".8" />
+    <path d="M286.464 532.017 L284.023 526.536" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M300.047 526.803 L298.193 521.097" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M314.100 523.037 L312.853 517.169" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <path d="M328.471 520.761 L327.843 514.794" stroke="#5f696b" stroke-width="1.2" stroke-linecap="round" opacity=".5" />
+    <circle cx="343" cy="662" r="119" fill="#556067" opacity=".3" />
+    <circle cx="343" cy="659" r="118" fill="url(#rim)" stroke="#7b8589" stroke-width="2" />
+    <circle cx="343" cy="659" r="109" fill="url(#dial)" stroke="url(#dialEdge)" stroke-width="1.5" />
+    <circle cx="343" cy="659" r="105.5" fill="none" stroke="url(#dialSpecular)" stroke-width="2.4" />
+    <circle cx="384" cy="730" r="16" fill="url(#dimple)" stroke="#eef1e7" stroke-width="2" />
+  </g>
+</svg>
