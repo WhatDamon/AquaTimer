@@ -61,11 +61,10 @@ def document(defs, layers, path):
 
 def package_assets():
     files = [OUT / name for name in ('DSEG-LICENSE.txt', 'AquaTimer.svg')]
-    readme = OUT / 'README.md'
-    if readme.is_file():
-        files.insert(0, readme)
     files += sorted(OUT.glob('AquaTimer-*.png'))
-    files += sorted((OUT / 'elements').iterdir())
+    elements = OUT / 'elements'
+    files += sorted(path for path in elements.iterdir() if path.suffix in {'.svg', '.png'})
+    files.append(elements / 'layers.json')
     with zipfile.ZipFile(OUT / 'AquaTimer-elements.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
         for path in files:
             archive.write(path, Path('AquaTimer-elements') / path.relative_to(OUT))
@@ -117,7 +116,7 @@ def main():
     }.items():
         clip = node(defs, 'clipPath', id=name)
         node(clip, 'rect', x=x, y=y, width=w, height=h, rx=r)
-    source = ET.parse(ROOT / 'design/lcd-display.svg').getroot()
+    source = ET.parse(ROOT / 'design/display/lcd-display.svg').getroot()
     for element in source.find(f'{{{NS}}}defs'):
         if element.get('id', '').startswith('lcdGlyph'):
             defs.append(copy.deepcopy(element))
@@ -249,7 +248,9 @@ def main():
         'stacking': 'bottom-to-top', 'layers': list(names),
         'placement': {'scale': 1, 'offset': [0, 0]},
     }, indent=2) + '\n')
-    shutil.copyfile(ROOT / 'AquaTimer/Resources/Fonts/DSEG-LICENSE.txt', OUT / 'DSEG-LICENSE.txt')
+    license_text = (ROOT / 'AquaTimer/Resources/Fonts/DSEG-LICENSE.txt').read_text(encoding='utf-8')
+    (OUT / 'DSEG-LICENSE.txt').write_text(
+        '\n'.join(line.rstrip() for line in license_text.splitlines()) + '\n', encoding='utf-8')
     package_assets()
     print('Generated and packaged nine aligned SVG/PNG elements, standalone artwork and previews.')
 

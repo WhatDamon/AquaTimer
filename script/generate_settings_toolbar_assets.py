@@ -12,7 +12,7 @@ def main():
     if renderer is None:
         raise SystemExit('Regenerating settings toolbar artwork requires rsvg-convert (Homebrew: librsvg).')
 
-    source = ROOT / 'design/aqua-settings-speaker.svg'
+    source = ROOT / 'design/settings/aqua-settings-speaker.svg'
     catalog = ROOT / 'AquaTimer/Resources/SettingsToolbar.xcassets'
     imageset = catalog / 'AquaSettingsSpeaker.imageset'
     imageset.mkdir(parents=True, exist_ok=True)

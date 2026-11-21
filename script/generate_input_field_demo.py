@@ -75,10 +75,10 @@ def main():
         '蓝色焦点与选择。画板展示放大细节、380 点窗口嵌入及常态、编辑、选择、禁用和无效输入。'
         '50×22 点宽高、10 点横向间距、居中数字与下方单位标签为 AquaTimer 的适配。')
     defs = node(root, 'defs')
-    metal = ET.parse(ROOT / 'design/brushed-metal.svg').getroot().find(f'{{{NS}}}defs')
+    metal = ET.parse(ROOT / 'design/window/brushed-metal.svg').getroot().find(f'{{{NS}}}defs')
     for item in metal:
         defs.append(copy.deepcopy(item))
-    dial = ET.parse(ROOT / 'design/aqua-minute-dial.svg').getroot()
+    dial = ET.parse(ROOT / 'design/controls/aqua-minute-dial.svg').getroot()
     for item in dial.find(f'{{{NS}}}defs'):
         if (item.get('id') or '').startswith(('dial', 'lcd')):
             defs.append(copy.deepcopy(item))
@@ -176,13 +176,13 @@ def main():
     text(root, 48, 827, '项目适配：50 × 22 pt、居中数字、下方单位、禁用材质与字段外的范围提示。', 11, '#70776c')
     text(root, 48, 852, '本轮为 SVG 视觉样稿；其他组件沿用已有设计或以占位显示。', 11, '#858b80')
     ET.indent(root, space='  ')
-    output = ROOT / 'design/aqua-input-fields.svg'
+    output = ROOT / 'design/controls/aqua-input-fields.svg'
     ET.ElementTree(root).write(output, encoding='utf-8', xml_declaration=True)
     renderer = shutil.which('rsvg-convert')
     if renderer is None:
         raise SystemExit(f'Saved {output}; install librsvg to render its PNG preview.')
     subprocess.run([renderer, '-w', '2240', '-h', '1800', str(output), '-o',
-                    str(ROOT / 'design/aqua-input-fields.png')], check=True)
+                    str(ROOT / 'design/controls/aqua-input-fields.png')], check=True)
     print(f'Generated {output} and its 2x PNG preview.')
 
 

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="548" viewBox="0 0 840 548" role="img" aria-labelledby="title description">
+  <title id="title">AquaTimer「试听」按钮样稿</title>
+  <desc id="description">68 × 20 pt 的普通 Aqua 按钮。上方反光中段平缓，两端随圆角收起，常态为灰白，按下为淡蓝。包含常态、按下、聚焦和禁用，以及声音设置局部和已接入的重置按钮素材。</desc>
+  <defs>
+    <pattern id="settingsStripes" patternUnits="userSpaceOnUse" width="2" height="2">
+      <rect width="2" height="2" fill="#efefef" />
+      <rect width="2" height="1" fill="#e9e9e9" />
+    </pattern>
+    <clipPath id="pushFaceClip">
+      <rect x=".4" y=".4" width="67.2" height="19.2" rx="9.6" />
+    </clipPath>
+    <linearGradient id="clearBody" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#bec1c4" />
+      <stop offset=".435" stop-color="#d9dbe0" />
+      <stop offset=".68" stop-color="#eff0f3" />
+      <stop offset=".84" stop-color="#fafafa" />
+      <stop offset=".90" stop-color="#fefdfe" />
+      <stop offset="1" stop-color="#fefdfe" />
+    </linearGradient>
+    <linearGradient id="blueBody" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#657fa5" />
+      <stop offset=".435" stop-color="#78b3dd" />
+      <stop offset=".55" stop-color="#81c1e7" />
+      <stop offset=".78" stop-color="#a2d8ef" />
+      <stop offset=".94" stop-color="#b7e4f0" />
+      <stop offset="1" stop-color="#b7e4f0" />
+    </linearGradient>
+    <linearGradient id="disabledBody" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#d9dadd" />
+      <stop offset=".43" stop-color="#dfe0e2" />
+      <stop offset="1" stop-color="#f3f3f4" />
+    </linearGradient>
+    <linearGradient id="clearCrown" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#e5e6e8" />
+      <stop offset=".075" stop-color="#fafafb" />
+      <stop offset=".24" stop-color="#eff0f2" />
+      <stop offset=".34" stop-color="#ededf0" />
+      <stop offset=".43" stop-color="#eeeff1" />
+    </linearGradient>
+    <linearGradient id="blueCrown" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#8da4c4" />
+      <stop offset=".075" stop-color="#bdd2ee" />
+      <stop offset=".24" stop-color="#abccea" />
+      <stop offset=".42" stop-color="#92c5e9" />
+    </linearGradient>
+    <linearGradient id="disabledCrown" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#e7e8e9" />
+      <stop offset=".14" stop-color="#f3f3f4" />
+      <stop offset=".48" stop-color="#ebeced" />
+    </linearGradient>
+    <linearGradient id="clearEdge" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#687078" />
+      <stop offset=".23" stop-color="#9299a2" />
+      <stop offset=".47" stop-color="#8d959f" />
+      <stop offset=".75" stop-color="#9aa0a6" />
+      <stop offset="1" stop-color="#6c737a" />
+    </linearGradient>
+    <linearGradient id="blueEdge" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="20">
+      <stop offset="0" stop-color="#475477" />
+      <stop offset=".38" stop-color="#628dbb" />
+      <stop offset=".61" stop-color="#638fb9" />
+      <stop offset=".86" stop-color="#799aa9" />
+      <stop offset="1" stop-color="#677b80" />
+    </linearGradient>
+    <linearGradient id="blueEndTint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#337bb5" stop-opacity=".42" />
+      <stop offset=".085" stop-color="#337bb5" stop-opacity=".12" />
+      <stop offset=".2" stop-color="#337bb5" stop-opacity="0" />
+      <stop offset=".8" stop-color="#337bb5" stop-opacity="0" />
+      <stop offset=".915" stop-color="#337bb5" stop-opacity=".12" />
+      <stop offset="1" stop-color="#337bb5" stop-opacity=".42" />
+    </linearGradient>
+    <filter id="contactShadow" x="-15%" y="-40%" width="130%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".6" />
+    </filter>
+    <filter id="keyboardGlow" x="-15%" y="-40%" width="130%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".65" />
+    </filter>
+    <g id="AquaPreviewNormal">
+      <rect x="1.2" y="1.8" width="65.6" height="19.25" rx="9.625" fill="#39424a" opacity=".31" filter="url(#contactShadow)" />
+      <rect x=".4" y=".4" width="67.2" height="19.2" rx="9.6" fill="url(#clearBody)" />
+      <path d="M0 7.35 C3.5 8.35 7.5 8.52 14 8.55 C26 8.6 42 8.6 54 8.55 C60.5 8.52 64.5 8.35 68 7.35 V0 H0 Z" fill="url(#clearCrown)" clip-path="url(#pushFaceClip)" />
+      <rect x=".5" y=".5" width="67" height="19" rx="9.5" fill="none" stroke="url(#clearEdge)" stroke-width="1" />
+      <text x="34" y="14.3" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#202226" text-anchor="middle">试听</text>
+    </g>
+    <g id="AquaPreviewPressed">
+      <rect x="1.2" y="2.0" width="65.6" height="19.25" rx="9.625" fill="#39424a" opacity=".31" filter="url(#contactShadow)" />
+      <rect x=".4" y=".4" width="67.2" height="19.2" rx="9.6" fill="url(#blueBody)" />
+      <path d="M0 7.35 C3.5 8.35 7.5 8.52 14 8.55 C26 8.6 42 8.6 54 8.55 C60.5 8.52 64.5 8.35 68 7.35 V0 H0 Z" fill="url(#blueCrown)" clip-path="url(#pushFaceClip)" />
+      <rect x=".4" y=".4" width="67.2" height="19.2" rx="9.6" fill="url(#blueEndTint)" />
+      <rect x=".5" y=".5" width="67" height="19" rx="9.5" fill="none" stroke="url(#blueEdge)" stroke-width="1" />
+      <text x="34" y="14.55" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#203247" text-anchor="middle">试听</text>
+    </g>
+    <g id="AquaPreviewFocus">
+      <rect x="-1.7" y="-1.7" width="71.4" height="23.4" rx="11.7" fill="none" stroke="#69acd5" stroke-width="2.6" opacity=".65" filter="url(#keyboardGlow)" />
+      <rect x="-1.3" y="-1.3" width="70.6" height="22.6" rx="11.3" fill="none" stroke="#83bcdf" stroke-width="1.4" />
+      <rect x="1.2" y="1.8" width="65.6" height="19.25" rx="9.625" fill="#39424a" opacity=".31" filter="url(#contactShadow)" />
+      <rect x=".4" y=".4" width="67.2" height="19.2" rx="9.6" fill="url(#clearBody)" />
+      <path d="M0 7.35 C3.5 8.35 7.5 8.52 14 8.55 C26 8.6 42 8.6 54 8.55 C60.5 8.52 64.5 8.35 68 7.35 V0 H0 Z" fill="url(#clearCrown)" clip-path="url(#pushFaceClip)" />
+      <rect x=".5" y=".5" width="67" height="19" rx="9.5" fill="none" stroke="url(#clearEdge)" stroke-width="1" />
+      <text x="34" y="14.3" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#202226" text-anchor="middle">试听</text>
+    </g>
+    <g id="AquaPreviewDisabled">
+      <rect x="1.2" y="1.8" width="65.6" height="19.25" rx="9.625" fill="#39424a" opacity=".07" filter="url(#contactShadow)" />
+      <rect x=".4" y=".4" width="67.2" height="19.2" rx="9.6" fill="url(#disabledBody)" />
+      <path d="M0 7.35 C3.5 8.35 7.5 8.52 14 8.55 C26 8.6 42 8.6 54 8.55 C60.5 8.52 64.5 8.35 68 7.35 V0 H0 Z" fill="url(#disabledCrown)" clip-path="url(#pushFaceClip)" />
+      <rect x=".5" y=".5" width="67" height="19" rx="9.5" fill="none" stroke="#b9bec3" stroke-width="1" />
+      <text x="34" y="14.3" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#91979d" text-anchor="middle">试听</text>
+    </g>
+  </defs>
+  <rect width="840" height="548" fill="#fafafa" />
+  <text x="32" y="43" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="24" font-weight="normal" fill="#282b2e">「试听」按钮</text>
+  <text x="808" y="41" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="12" font-weight="normal" fill="#646b72" text-anchor="end">68 × 20 pt</text>
+  <rect x="32" y="70" width="776" height="172" fill="url(#settingsStripes)" />
+  <use transform="translate(90 110) scale(4)" xlink:href="#AquaPreviewNormal" />
+  <text x="226" y="218" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="12" font-weight="normal" fill="#515963" text-anchor="middle">常态 · 4×</text>
+  <use transform="translate(478 110) scale(4)" xlink:href="#AquaPreviewPressed" />
+  <text x="614" y="218" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="12" font-weight="normal" fill="#515963" text-anchor="middle">按下 · 4×</text>
+  <rect x="32" y="257" width="776" height="76" fill="url(#settingsStripes)" />
+  <use transform="translate(95 275)" xlink:href="#AquaPreviewNormal" />
+  <text x="129" y="316" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="11" font-weight="normal" fill="#515963" text-anchor="middle">常态 · 1×</text>
+  <use transform="translate(289 275)" xlink:href="#AquaPreviewPressed" />
+  <text x="323" y="316" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="11" font-weight="normal" fill="#515963" text-anchor="middle">按下</text>
+  <use transform="translate(483 275)" xlink:href="#AquaPreviewFocus" />
+  <text x="517" y="316" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="11" font-weight="normal" fill="#515963" text-anchor="middle">键盘聚焦</text>
+  <use transform="translate(677 275)" xlink:href="#AquaPreviewDisabled" />
+  <text x="711" y="316" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="11" font-weight="normal" fill="#515963" text-anchor="middle">禁用</text>
+  <text x="32" y="368" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="12" font-weight="normal" fill="#515963">声音设置中的试听按钮 · 1×</text>
+  <rect x="32" y="382" width="520" height="122" fill="url(#settingsStripes)" />
+  <text x="62" y="415" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#282b2e">声音：</text>
+  <rect x="162" y="402" width="13" height="13" rx="3" fill="#547db3" />
+  <path d="M165 408.5 l2.5 2.5 4.5 -5" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="182" y="414" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#282b2e">到时播放提示音</text>
+  <rect x="184" y="430" width="190" height="22" rx="4" fill="#e1e3e6" stroke="#c0c5cb" stroke-width=".6" />
+  <text x="195" y="445" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="13" font-weight="normal" fill="#4f5660">玻璃音（Glass）</text>
+  <path d="M361 439 l3 3 3 -3" fill="none" stroke="#77818b" stroke-width="1.2" />
+  <use transform="translate(382 431)" xlink:href="#AquaPreviewNormal" />
+  <path d="M184 477 H394" fill="none" stroke="#c6cbd0" stroke-width="3" />
+  <circle cx="331" cy="477" r="7" fill="#e0e4e8" stroke="#b4bcc4" stroke-width=".6" />
+  <text x="412" y="481" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="12" font-weight="normal" fill="#515963">70%</text>
+  <text x="584" y="368" font-family="Lucida Grande, STXihei, STHeiti, sans-serif" font-size="12" font-weight="normal" fill="#515963">主窗口「重置」按钮材质</text>
+  <rect x="584" y="382" width="176" height="36" fill="#b0b0b0" />
+  <image x="584" y="382" width="176" height="36" xlink:href="data:image/png;base64,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" />
+</svg>

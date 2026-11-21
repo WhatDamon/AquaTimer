@@ -40,7 +40,7 @@ def main():
 
     ET.register_namespace("", SVG_NS)
     ET.register_namespace("xlink", XLINK_NS)
-    source = ET.parse(ROOT / "design/aqua-window-buttons.svg").getroot()
+    source = ET.parse(ROOT / "design/window/aqua-window-buttons.svg").getroot()
     definitions = source.find(f"{{{SVG_NS}}}defs")
     if definitions is None:
         raise SystemExit("The button SVG does not contain definitions.")

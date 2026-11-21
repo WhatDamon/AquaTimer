@@ -72,7 +72,7 @@ def main():
         raise SystemExit('Regenerating action buttons requires rsvg-convert (Homebrew: librsvg).')
     ET.register_namespace('', NS)
     ET.register_namespace('xlink', XLINK)
-    root = ET.parse(ROOT / 'design/aqua-action-buttons.svg').getroot()
+    root = ET.parse(ROOT / 'design/controls/aqua-action-buttons.svg').getroot()
     source_defs = root.find(f'{{{NS}}}defs')
     if source_defs is None:
         raise SystemExit('Missing action-button SVG definitions.')

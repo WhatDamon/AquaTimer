@@ -29,7 +29,7 @@ def main():
         raise SystemExit('Regenerating input assets requires rsvg-convert (Homebrew: librsvg).')
     ET.register_namespace('', NS)
     ET.register_namespace('xlink', XLINK)
-    source = ET.parse(ROOT / 'design/aqua-input-fields.svg').getroot()
+    source = ET.parse(ROOT / 'design/controls/aqua-input-fields.svg').getroot()
     all_definitions = source.find(f'{{{NS}}}defs')
     if all_definitions is None:
         raise SystemExit('Missing text-field SVG definitions.')

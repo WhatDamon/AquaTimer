@@ -100,7 +100,7 @@ def main():
         '展示三倍细节、原尺寸窗口、常态、悬停、按下、禁用、键盘焦点，'
         '以及开始、暂停、继续、再次开始和重置图形。可见高度 28 点，按钮间距 12 点。')
     defs = node(root, 'defs')
-    input_board = ET.parse(ROOT / 'design/aqua-input-fields.svg').getroot()
+    input_board = ET.parse(ROOT / 'design/controls/aqua-input-fields.svg').getroot()
     for item in input_board.find(f'{{{NS}}}defs'):
         defs.append(copy.deepcopy(item))
 
@@ -215,13 +215,13 @@ def main():
     text(root, 48, 941, '依据：Guidebook 原尺寸 Finder PNG、Ars Technica Tiger 截图与用户参考；详见光学研究图。', 11, '#70776c')
     text(root, 48, 967, '应用已接入独立按钮；可见高度 28 pt，间距 12 pt，保留原生 NSButton 操作。', 11, '#858b80')
     ET.indent(root, space='  ')
-    output = ROOT / 'design/aqua-action-buttons.svg'
+    output = ROOT / 'design/controls/aqua-action-buttons.svg'
     ET.ElementTree(root).write(output, encoding='utf-8', xml_declaration=True)
     renderer = shutil.which('rsvg-convert')
     if renderer is None:
         raise SystemExit(f'Saved {output}; install librsvg to render the PNG preview.')
     subprocess.run([renderer, '-w', '2240', '-h', '2000', str(output), '-o',
-                    str(ROOT / 'design/aqua-action-buttons.png')], check=True)
+                    str(ROOT / 'design/controls/aqua-action-buttons.png')], check=True)
     print(f'Generated {output} and its 2x PNG preview.')
 
 

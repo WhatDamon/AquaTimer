@@ -1,0 +1,26 @@
+{
+  "canvas": [
+    1024,
+    1024
+  ],
+  "origin": "top-left",
+  "stacking": "bottom-to-top",
+  "layers": [
+    "01-Ground-Shadow",
+    "02-Housing-and-Feet",
+    "03-LCD-Socket",
+    "04-LCD-Segments",
+    "05-Minute-Dial",
+    "06-Start-Key",
+    "07-Reset-Key",
+    "08-Speaker-Slots",
+    "09-LCD-Glass"
+  ],
+  "placement": {
+    "scale": 1,
+    "offset": [
+      0,
+      0
+    ]
+  }
+}

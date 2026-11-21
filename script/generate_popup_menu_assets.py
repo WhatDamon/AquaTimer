@@ -19,13 +19,13 @@ def main():
     scratch.mkdir(parents=True, exist_ok=True)
     write_json(catalog / 'Contents.json', {'info': {'author': 'xcode', 'version': 1}})
 
-    popup = ET.parse(ROOT / 'design/aqua-popup-menu.svg').getroot()
+    popup = ET.parse(ROOT / 'design/controls/aqua-popup-menu.svg').getroot()
     definitions = {node.get('id'): node for node in popup.find(f'{{{NS}}}defs') if node.get('id')}
     for state in ('closed', 'disabled'):
         export(renderer, definitions, scratch, 'AquaPopup' + state.title(), 190, 24, '0 -2 190 24',
                [definitions[state]], catalog=catalog)
 
-    checkbox = ET.parse(ROOT / 'design/aqua-selection-controls.svg').getroot()
+    checkbox = ET.parse(ROOT / 'design/controls/aqua-selection-controls.svg').getroot()
     tick = checkbox.find(f"{{{NS}}}defs/{{{NS}}}path[@id='tick']")
     for suffix, color in (('Dark', '#23262b'), ('Light', '#fff')):
         tick.set('fill', color)

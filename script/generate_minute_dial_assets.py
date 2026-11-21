@@ -31,7 +31,7 @@ def main():
         raise SystemExit("Regenerating dial assets requires rsvg-convert (Homebrew: librsvg).")
     ET.register_namespace("", SVG_NS)
     ET.register_namespace("xlink", XLINK_NS)
-    source = ET.parse(ROOT / "design/aqua-minute-dial.svg").getroot()
+    source = ET.parse(ROOT / "design/controls/aqua-minute-dial.svg").getroot()
     definitions = source.find(f"{{{SVG_NS}}}defs")
     if definitions is None:
         raise SystemExit("The dial SVG does not contain definitions.")

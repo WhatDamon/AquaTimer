@@ -50,7 +50,7 @@ def main():
         raise SystemExit("Regenerating LCD assets requires rsvg-convert (Homebrew: librsvg).")
     ET.register_namespace("", SVG)
     ET.register_namespace("xlink", XLINK)
-    source = ET.parse(ROOT / "design/lcd-display.svg").getroot()
+    source = ET.parse(ROOT / "design/display/lcd-display.svg").getroot()
     definitions = source.find(f"{{{SVG}}}defs")
     if definitions is None:
         raise SystemExit("Missing LCD definitions.")

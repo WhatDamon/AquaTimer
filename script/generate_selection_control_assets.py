@@ -13,7 +13,7 @@ def main():
 
     ET.register_namespace('', NS)
     ET.register_namespace('xlink', XLINK)
-    document = ET.parse(ROOT / 'design/aqua-selection-controls.svg').getroot()
+    document = ET.parse(ROOT / 'design/controls/aqua-selection-controls.svg').getroot()
     definitions = {node.get('id'): node for node in document.find(f'{{{NS}}}defs') if node.get('id')}
     scratch = ROOT / '.build/selection-control-assets'
     scratch.mkdir(parents=True, exist_ok=True)

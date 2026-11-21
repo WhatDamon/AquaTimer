@@ -14,7 +14,7 @@ def main():
 
     ET.register_namespace('', NS)
     ET.register_namespace('xlink', XLINK)
-    root = ET.parse(ROOT / 'design/aqua-toolbar-toggle.svg').getroot()
+    root = ET.parse(ROOT / 'design/window/aqua-toolbar-toggle.svg').getroot()
     definitions = {node.get('id'): node for node in root.find(f'{{{NS}}}defs') if node.get('id')}
     catalog = ROOT / 'AquaTimer/Resources/SettingsToolbar.xcassets'
     scratch = ROOT / '.build/toolbar-toggle-assets'

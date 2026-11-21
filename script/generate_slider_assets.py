@@ -14,7 +14,7 @@ def main():
 
     ET.register_namespace('', NS)
     ET.register_namespace('xlink', XLINK)
-    root = ET.parse(ROOT / 'design/aqua-volume-slider.svg').getroot()
+    root = ET.parse(ROOT / 'design/controls/aqua-volume-slider.svg').getroot()
     definitions = {node.get('id'): node for node in root.find(f'{{{NS}}}defs') if node.get('id')}
     catalog = ROOT / 'AquaTimer/Resources/Sliders.xcassets'
     scratch = ROOT / '.build/slider-assets'

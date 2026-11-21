@@ -50,7 +50,7 @@ def main():
         raise SystemExit("Regenerating metal assets requires rsvg-convert (Homebrew: librsvg).")
     ET.register_namespace("", SVG)
     ET.register_namespace("xlink", XLINK)
-    source = ET.parse(ROOT / "design/brushed-metal.svg").getroot()
+    source = ET.parse(ROOT / "design/window/brushed-metal.svg").getroot()
     definitions = source.find(f"{{{SVG}}}defs")
     if definitions is None:
         raise SystemExit("Missing metal material definitions.")
